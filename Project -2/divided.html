@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="H&M.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- first navigation bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mt-4">
+
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
+          <li class="nav-item1" style="white-space:nowrap">
+            <a class="nav-link active" aria-current="page" href="#">Customer Service</a>
+          </li>
+          <li class="nav-item" style=" white-space:nowrap">
+            <a class="nav-link active " aria-current="page" href="#">Newsletter</a>
+          </li>
+          <li class="nav-item" style=" white-space:nowrap">
+            <a class="nav-link active" aria-current="page" href="#">Find a store</a>
+          </li>
+          <li class="nav-item mt-1">
+            <a class="navbar-brand m-3" href="#">
+              <svg class="__2OnJ u9au" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <path
+                  d="M4 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 1a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 1a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item2">
+            <a class="navbar-brand" href="H&M.html">
+              <svg class="__2OnJ __2utV PH_l mx-5" width="60" height="50" viewBox="0 0 370 244"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" role="img"
+                aria-labelledby="id-hm-logo-xlarge">
+                <title id="id-hm-logo-xlarge">H&amp;M</title>
+                <path fill="#FF0000"
+                  d="M259.895 7.413c13.424-6.618 20.087-5.737 20.232.946.19 8.7-1.098 20.23-2.016 28.604-4.983 45.423-13.32 82.543-13.954 129.19 21.94-56.802 40.345-96.278 64.03-144.909 7.53-15.47 12.325-12.593 18.503-15.343 24.082-10.715 24.984-4.133 21.837 8.95-11.686 48.552-41.54 201.376-46.114 224.907-1.328 6.807-8.715 3.923-10.644 1.26-8.57-11.85-18.225-12.036-17.14-19.919 5.37-39.233 24.71-137.666 29.75-160.863-25.719 52.696-52.37 118.566-66.053 155.914-2.907 7.931-8.188 7.35-11.48 1.546-4.63-8.15-13.61-12.312-15.093-21.943-4.702-30.628 5.37-89.003 6.773-125.936-13.994 40.342-37.49 118.67-47.782 154.057-4.256 14.643-18.382 12.253-14.627-2.018 15.642-59.389 49.326-164.425 63.915-202.198 3.427-8.874 12.406-8.569 19.863-12.245zM174.6.115c4.26 1.025 3.913 6.05 1.31 12.912-7.682 20.247-18.335 46.847-30.516 78.212 7.658-.874 11.811-1.17 11.811-1.17 10.994-1.358 13.041 4.139 9.946 9.99-2.466 4.664-5.436 1.554-15.724 16.89-5.796 8.642-15.259 10.924-20.515 12.076-12.662 33.523-26.23 70.916-39.415 110.77-1.919 5.804-7.524 4.532-9.209 2.174-6.192-8.647-10.758-8.933-15.558-15.927-.577-1.132-1.706-2.672-1.027-5.448 3.53-14.425 12.901-44.067 27.156-83.091-17.958 3.892-37.387 8.076-45.408 9.94-9.626 25.445-19.014 50.967-27.908 76.18-5.518 15.64-19.88 12.617-14.84-2.165 8.028-23.548 16.89-48.004 25.776-71.72-9.948-1.063-13.313-8.088-18.873-13.958-2.147-2.267-6.828-1.948-9.12-5.127-4.123-5.711-3.712-8.248 5.81-10.996a955.318 955.318 0 0137.464-9.998c16.09-41.524 30.63-77.144 38.38-96.151C90.114-1.138 105.514.226 99.664 14.674c-11.889 29.363-24.079 59.867-36.11 90.799a880.98 880.98 0 0144.748-8.87 2312.644 2312.644 0 0134.62-83.968c.845-1.937 3.31-4.678 5.878-5.118 8.092-1.385 21.251-8.498 25.8-7.402zm-27.552 190.077c1.265-.773 2.524-1.715 3.767-2.75a756.514 756.514 0 01-2.82-8.468 139.528 139.528 0 00-2.752 3.638c-5.386 7.396-2.197 10.028 1.805 7.58zm7.167-35.065c6.67-7.53-6.516-10.681-3.48.836.17.65.382 1.413.62 2.254a98.19 98.19 0 002.86-3.09zm6.941 22.695c6.602-5.721 12.908-.046 6.38 9.628-1.404 2.08-2.99 4.318-4.729 6.522a193.17 193.17 0 002.146 5.877c3.375 8.654-5.488 10.824-8.345 3.656-.25-.626-.51-1.297-.778-1.995-5.387 4.772-11.618 7.777-18.275 5.707-10.954-3.407-13.74-18.83-3.514-30.711 4.103-4.767 7.191-8.074 9.771-10.716a251.947 251.947 0 01-1.819-6.17c-1.328-4.81-2.527-10.416 2.287-16.13 9.027-10.712 29.971-1.203 19.377 15.289-2.552 3.972-5.535 7.724-8.647 11.527a979.555 979.555 0 003.26 10.18 78.304 78.304 0 012.886-2.664z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item3 mt-2">
+            <a class="navbar-brand fs-6 ml-5 " href="#">
+              <svg class="__2OnJ u9au" width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <path
+                  d="M19.346 18.24c-1.243-.425-1.477-.511-2.047-.76-2.453-1.067-3.445-2.375-2.77-4.08.142-.36.277-.648.611-1.307l.012-.024c.279-.55.386-.772.512-1.062a5.26 5.26 0 0 0 .17-.448c.191-.575.273-1.047.381-2.173l.005-.053.005-.052c.368-3.824-.147-5.244-2.249-5.973A5.822 5.822 0 0 0 12 2.001h-.014c-.271-.004-.544.01-.814.044-.4.05-.788.138-1.149.263-2.101.73-2.616 2.15-2.247 5.974l.004.041.004.043c.108 1.137.19 1.613.382 2.193.05.153.107.302.17.448.126.29.234.512.512 1.061l.012.025c.334.658.47.947.612 1.307.674 1.705-.318 3.013-2.771 4.08-.57.249-.805.336-2.046.76-1.889.648-2.83 1.506-3.117 2.816l-.001.012c.132.037.303.076.508.118a32.46 32.46 0 0 0 2.452.369c2.318.274 5.014.445 7.505.445 2.491 0 5.186-.17 7.503-.445.99-.117 1.846-.247 2.45-.37.205-.04.375-.08.507-.116-.304-1.338-1.244-2.187-3.116-2.83zM14.304 1.364c2.647.917 3.323 2.783 2.917 7.013l-.005.052-.005.053c-.115 1.194-.208 1.731-.427 2.391-.06.182-.128.36-.203.532-.135.312-.25.55-.537 1.117l-.012.023c-.321.634-.445.898-.574 1.222-.423 1.072.217 1.916 2.24 2.796.54.235.753.314 1.972.73 2.192.753 3.399 1.855 3.785 3.65l.045.42c0 .64-1.016.846-3.878 1.185a67.263 67.263 0 0 1-7.62.452 67.32 67.32 0 0 1-7.622-.452C1.516 22.209.5 22.004.503 21.306l.05-.413c.38-1.746 1.587-2.848 3.778-3.6 1.217-.416 1.432-.495 1.971-.73 2.023-.88 2.663-1.724 2.24-2.796-.128-.324-.253-.59-.574-1.222l-.012-.025a18.808 18.808 0 0 1-.537-1.115 6.292 6.292 0 0 1-.203-.532c-.22-.666-.313-1.207-.428-2.412l-.004-.043-.004-.041c-.408-4.227.27-6.096 2.915-7.013a6.589 6.589 0 0 1 1.354-.312c.313-.038.63-.056.944-.051.8-.01 1.595.113 2.311.363z">
+                </path>
+              </svg>
+    
+              Sign in
+            </a>
+          </li>
+          <li class="nav-item mt-2">
+            <a class="navbar-brand fs-6 ml-7 " href="#">
+              <svg class="__2OnJ u9au" width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <path class="innerElement"
+                  d="M17.376 1C21.476 1 24 3.556 24 7.748c0 1.614-.961 3.598-2.696 5.9-.89 1.183-1.97 2.425-3.196 3.705a71.38 71.38 0 0 1-3.987 3.832 71.307 71.307 0 0 1-1.816 1.566L12 23l-.305-.25a71.307 71.307 0 0 1-1.816-1.565 71.38 71.38 0 0 1-3.987-3.832c-1.227-1.28-2.305-2.522-3.196-3.704C.961 11.346 0 9.362 0 7.748 0 3.556 2.524 1 6.624 1c2.08 0 4.23 1.548 5.376 3.548C13.145 2.548 15.294 1 17.376 1z"
+                  fill="#FFF"></path>
+                <path class="outerElement"
+                  d="M17.376 1C21.476 1 24 3.578 24 7.807c0 1.628-.961 3.63-2.696 5.953-.89 1.192-1.97 2.446-3.196 3.737a71.66 71.66 0 0 1-3.987 3.865 71.495 71.495 0 0 1-1.816 1.58l-.305.251-.305-.252c-.093-.076-.264-.22-.503-.424-.396-.34-.838-.727-1.313-1.155a71.66 71.66 0 0 1-3.987-3.865c-1.227-1.291-2.305-2.545-3.196-3.737C.961 11.437 0 9.435 0 7.807 0 3.578 2.524 1 6.624 1c2.08 0 4.23 1.562 5.376 3.58C13.145 2.56 15.294 1 17.376 1zM12 21.79l.18-.154c.383-.329.812-.704 1.273-1.12a69.488 69.488 0 0 0 3.865-3.746c1.18-1.244 2.217-2.448 3.068-3.587 1.593-2.132 2.462-3.943 2.462-5.286 0-3.64-2.063-5.747-5.565-5.747-1.927 0-4.049 1.768-4.842 3.843L12 7.145l-.44-1.152C10.765 3.919 8.642 2.15 6.716 2.15c-3.502 0-5.565 2.107-5.565 5.747 0 1.343.87 3.154 2.462 5.286.85 1.14 1.887 2.343 3.068 3.587a69.488 69.488 0 0 0 3.865 3.747A69.313 69.313 0 0 0 12 21.789z">
+                </path>
+              </svg>
+              Favourites
+            </a>
+          </li>
+          <li class="nav-item mt-2">
+            <a class="navbar-brand fs-6" href="#">
+              <svg class="__2OnJ u9au" width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <path
+                  d="M12 .1c2.9 0 4.9 1.4 4.9 3.8v.6h3.8v5.1c0 4.7 2.1 13.3.5 13.3-.7 0-5 1.1-9.2 1.1-4.6 0-9.2-1.1-9.2-1.1-1.5 0 .5-8.7.5-13.3V4.4h3.8v-.6c0-2.4 2-3.7 4.9-3.7zm7.6 5.4h-2.7v2.2h-1.1V5.5H8.2v2.2H7.1V5.5H4.4v4c0 1.3-.1 2.9-.4 5.3l-.1.9c-.4 3-.5 3.9-.5 5v1.2c.8.1 1.6.3 2.4.4 2.1.3 4.2.5 6.1.5h.5c1.6 0 3.3-.2 5.2-.5.2 0 2-.4 2.9-.5v-1.4c0-1-.2-1.9-.5-4.7 0-.3-.1-.6-.1-.9-.3-2.4-.4-4-.4-5.3v-4zM12 1.2c-2.3 0-3.8 1-3.8 2.6v.6h7.6v-.6c0-1.7-1.5-2.6-3.8-2.6z">
+                </path>
+              </svg>
+              Shopping bag (0)
+            </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+ 
+  
+      <!-- second navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light  bg-white ms-1 me-5" style="margin-right: 120px;">
+        <div class="container-fluid navsshort ">
+          <!-- Use a single navbar-toggler button for the entire menu -->
+          <button class="navbar-toggler ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav Items -->
+          <div class="collapse navbar-collapse" id="navbarNav" style="white-space: nowrap;">
+            <ul class="navbar-nav ms-auto mx-5" style="font-size: 17px;"> <!-- ms-auto and me-auto to center the items -->
+              <li class="nav-item" >
+                <a class="nav-link ladies text-dark mx-2" href="Ladies.html">Ladies</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin:40px 0px 0px 300px;">
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">Arrivals</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1">Clothes</div> <br>
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Trending</div>
+                      <div class="f1">Now</div> <br>
+                      <div class="f1 f2"> Shop by</div>
+                      <div class="f1 f2">Occasion</div>
+                      <div class="f1 mt-1">The Occasion</div>
+                      <div class="f1">Shop</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1">Tops & T-</div>
+                      <div class="f1">shirts</div>
+                      <div class="f1 mt-1">Dresses</div>
+                      <div class="f1 mt-1"> Shirts &</div>
+                      <div class="f1">Blouses</div>
+                      <div class="f1 mt-1">Trousers</div>
+                      <div class="f1 mt-1">Jeans</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Basic</div>
+                      <div class="f1 mt-1">Blazers</div>
+                      <div class="f1 mt-1">Skirts</div>
+                      <div class="f1 mt-1">Shorts</div>
+                      <div class="f1 mt-1">Nightwear</div>
+                      <div class="f1 mt-1">Lingerie</div>
+                      <div class="f1 mt-1">Loungewear</div>
+                      <div class="f1 mt-1">Jumpsuits</div>
+                      <div class="f1 mt-1">Sportswear</div>
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                      <div class="f1 f2 mt-3">Magazine</div>
+                      <div class="f1 mt-1">Magazine</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="men.html">Men</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">Arrivals</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1">Clothes</div> 
+                      <div class="f1 mt-1">Shoes &</div>
+                      <div class="f1">Accessories</div> <br>
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Trending</div>
+                      <div class="f1">Now</div> <br>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1">Tshirts</div>
+                      <div class="f1">& Tops </div>
+                      <div class="f1 mt-1"> Shirts</div>
+                      <div class="f1 mt-1">Trousers</div>
+                      <div class="f1 mt-1">Jeans</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Hoodies &</div>
+                      <div class="f1">Sweatshirts</div>
+                      <div class="f1 mt-1">Basic</div>
+                      <div class="f1 mt-1">Blazers</div>
+                      <div class="f1 mt-1">Skirts</div>
+                      <div class="f1 mt-1">Shorts</div>
+                      <div class="f1 mt-1">Cardigans</div>
+                      <div class="f1">& Jumpers</div>
+                      <div class="f1 mt-1">Jackets</div>
+                      <div class="f1"> & Coats</div>
+                      <div class="f1 mt-1">sale</div>
+                      <div class="f1 mt-1">Socks</div>
+                      
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="divided.html">Divided</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">Arrivals</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1">Clothes</div> 
+                      <div class="f1 mt-1">Shoes &</div>
+                      <div class="f1">Accessories</div> <br>
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Trending</div>
+                      <div class="f1">Now</div> <br>
+                      <div class="f1 f2"> Shop by</div>
+                      <div class="f1 f2">Occasion</div>
+                      <div class="f1 mt-1">The Occasion</div>
+                      <div class="f1">Shop</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1">Tops & T-</div>
+                      <div class="f1">shirts</div>
+                      <div class="f1 mt-1">Dresses</div>
+                      <div class="f1 mt-1"> Shirts &</div>
+                      <div class="f1">Blouses</div>
+                      <div class="f1 mt-1">Trousers</div>
+                      <div class="f1 mt-1">Jeans</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Basic</div>
+                      <div class="f1 mt-1">Blazers</div>
+                      <div class="f1 mt-1">Skirts</div>
+                      <div class="f1 mt-1">Shorts</div>
+                      <div class="f1 mt-1">Nightwear</div>
+                      <div class="f1 mt-1">sale</div>
+                      <div class="f1 mt-1">Swimwear</div>
+                      
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                      <div class="f1 f2 mt-3">Magazine</div>
+                      <div class="f1 mt-1">Magazine</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="baby.html">Baby</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2">Life with</div> 
+                      <div class="f1 f2"> Baby</div>
+                      <div class="f1 mt-1">Life with</div> 
+                      <div class="f1"> Baby</div> <br>
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Season</div>
+                      <div class="f1"> treasures</div>
+                      <div class="f1">⏱️</div>
+                      <div class="f1 mt-1">Adorable sets</div>
+                      <div class="f1"> sets</div>
+                      <div class="f1 mt-1">Best of </div>
+                      <div class="f1"> basics ❣️</div>
+                      <div class="f1 mt-1">Party edit 👼 </div>
+                      <div class="f1">👼 </div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2">Newborn</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1 mt-1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div> <br>
+                      <div class="f1 f2">Baby Girl</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1 mt-1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2">Baby Boy</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1 mt-1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      
+                    </div>
+                    <div class="col first" style="margin: 40px 280px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div>
+                      <div class="f1 f2">Product</div> 
+                      <div class="f1 mt-1">View all</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sale</div><br>
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="#">Kids</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Season</div>
+                      <div class="f1"> treasures</div>
+                      <div class="f1">⏱️</div>
+                      <div class="f1 mt-1">sets too</div>
+                      <div class="f1">sweet ☀️</div>
+                      <div class="f1 mt-1">Best of </div>
+                      <div class="f1"> basics ❣️</div>
+                      <div class="f1 mt-1">Party edit 👼 </div>
+                      <div class="f1">👼 </div> <br>
+                      <div class="f1 f2">Girl 2-8Y</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sportswear</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2">Boy 2-8Y</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sprtswear</div><br>
+                      <div class="f1 f2">Girls 9-8Y</div>
+                      <div class="f1 f2">14Y</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sportswear</div><br>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2">Boys 9-8Y</div>
+                      <div class="f1 f2">14Y</div> 
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> New</div> 
+                      <div class="f1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Outwear</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sportswear</div><br>
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1">New</div>
+                      <div class="f1">Arrivals</div>
+                      <div class="f1 mt-1">Clothing</div>
+                      <div class="f1 mt-1"> Baby</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Party & </div>
+                      <div class="f1">Occasion</div>
+                      <div class="f1 mt-1">Sale</div>
+                      <div class="f1 mt-1">outerwear</div> <br>
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="#">H&M HOME</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">essential</div>
+                      <div class="f1 f2">sets</div>
+                      <div class="f1 mt-1">Bed time</div>
+                      <div class="f1 mt-1" >Bath time</div>
+                      <div class="f1 mt-1" >Table talk</div> <br>
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">Arrivals</div>
+                      <div class="f1 mt-1"> New</div>
+                      <div class="f1">Products</div> 
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Room</div>
+                      <div class="f1 mt-1">Bedroom</div>
+                      <div class="f1 mt-1">Living</div>
+                      <div class="f1"> Room</div>
+                      <div class="f1 mt-1">Bathroom</div>
+                      <div class="f1 mt-1">Nursery</div>
+                      <div class="f1 mt-1">Kids Room</div>
+                      <div class="f1 mt-1">Kitchen</div>
+                      <div class="f1 mt-1">Balcony &</div>
+                      <div class="f1">Outdoor</div> <br>
+                      <div class="f1 f2">Trending</div> 
+                      <div class="f1 f2">now</div>
+                      <div class="f1 mt-1">The dorm</div>
+                      <div class="f1"> shop</div>
+                      <div class="f1 mt-1">Pop of</div>
+                      <div class="f1"> colours</div>
+                      <div class="f1 mt-1">Season news-</div>
+                      <div class="f1">Under</div>
+                      <div class="f1"> Rs.999</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1"> Decorations</div>
+                      <div class="f1 mt-1">Cushions</div>
+                      <div class="f1 mt-1"> Bed Linen</div>
+                      <div class="f1 mt-1">Room </div>
+                      <div class="f1">Fragrance</div> 
+                      <div class="f1 mt-1">Serving & </div>
+                      <div class="f1">Fragrance</div> 
+                      <div class="f1 mt-1">Dining</div>
+                      <div class="f1 mt-1">Cookware</div>
+                      <div class="f1 mt-1">Storage</div>
+                      <div class="f1 mt-1">Dining</div>
+                      <div class="f1 mt-1">Bath & </div>
+                      <div class="f1">Shower</div>
+                      <div class="f1 mt-1"> Curtains</div> 
+                      <div class="f1 mt-1">Sleepwear</div>
+                      <div class="f1 mt-1">Blankets</div>
+                      <div class="f1 mt-1">Sleepwear</div>
+                      <div class="f1 mt-1"> Giftwraps</div>
+                      <div class="f1 mt-1">Salef</div>
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">Meet the</div>
+                      <div class="f1">Maker</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="#">Sport</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2"> Women</div> 
+                      <div class="f1 mt-1">Shop by </div>
+                      <div class="f1">Activity</div>
+                      <div class="f1 mt-1" >View All</div>
+                      <div class="f1 mt-1"> New</div>
+                      <div class="f1">arrivals</div> 
+                      <div class="f1 mt-1" >Clothing</div>
+                      <div class="f1 mt-1">Active</div>
+                      <div class="f1">Swimwear</div>
+                      <div class="f1 mt-1">Outerwear</div>
+                      <div class="f1 mt-1">Accessories &</div>
+                      <div class="f1">Equipment</div>
+                      <div class="f1 mt-1">Maternity</div>
+                      <div class="f1 mt-1">The</div>
+                      <div class="f1"> leggings</div>
+                      <div class="f1"> guide</div>
+                      <div class="f1 mt-1">The sports</div>
+                      <div class="f1">bra guide</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2">Men</div> 
+                      <div class="f1 mt-1">Shop by </div>
+                      <div class="f1">Activity</div>
+                      <div class="f1 mt-1" >View All</div>
+                      <div class="f1 mt-1"> New</div>
+                      <div class="f1">arrivals</div> 
+                      <div class="f1 mt-1" >Clothing</div>
+                      <div class="f1 mt-1"> Outerwear</div>
+                      <div class="f1 mt-1">Accessories &</div>
+                      <div class="f1">Equipment</div>
+                      <div class="f1 mt-1">The T-</div>
+                      <div class="f1">shirt guide</div>
+                      <div class="f1 mt-1">The Shorts</div>
+                      <div class="f1">guide</div>
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                    <div class="f1 f2">Kids</div> 
+                    <div class="f1 mt-1" >View All</div>
+                    <div class="f1 mt-1"> New</div>
+                    <div class="f1">arrivals</div> 
+                    <div class="f1 mt-1" >Girls</div>
+                    <div class="f1 mt-1" >Boys</div>
+                    <div class="f1 mt-1" >Sports</div>
+                    <div class="f1">Accessories</div> <br>
+                    <div class="f1 f2">Sale</div> 
+                    <div class="f1 mt-1" >View All</div>
+                    <div class="f1 mt-1">Women</div>
+                    <div class="f1 mt-1">Men</div>
+                    <div class="f1 mt-1">Kids</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="#">Sustainability</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2">Our work</div> 
+                      <div class="f1 mt-1">Let's </div>
+                      <div class="f1">change</div>
+                      <div class="f1 mt-1">Let's </div>
+                      <div class="f1">innovate</div>
+                      <div class="f1 mt-1">Let's be </div>
+                      <div class="f1">fair</div>
+                      <div class="f1 mt-1">Let's be</div>
+                      <div class="f1">for all</div>
+                      <div class="f1 mt-1">Let's be</div>
+                      <div class="f1">transparent</div>
+                      <div class="f1 mt-1">Let's </div>
+                      <div class="f1">clean up</div>
+                      <div class="f1 mt-1">Let's close</div>
+                      <div class="f1">the loop</div>
+                      <div class="f1 mt-1">Let's </div>
+                      <div class="f1">reward </div>
+                      <div class="f1">our</div>
+                      <div class="f1"> members</div>
+                      <div class="f1 mt-1">Praise</div>
+                      <div class="f1">from</div>
+                      <div class="f1">others</div>
+                    </div>
+                    <div class="col" style="margin: 40px 500px 0px 0px;">
+                      <div class="f1 f2">H&M Take </div> 
+                      <div class="f1 f2">Care</div>
+                      <div class="f1 mt-1">Wash</div>
+                      <div class="f1 mt-1">Care</div>
+                      <div class="f1 mt-1">Repair &</div>
+                      <div class="f1">remake</div>
+                      <div class="f1 mt-1">Care</div>
+                      <div class="f1">products</div> <br>
+                      <div class="f1 f2">Our</div> 
+                      <div class="f1 f2">commitment</div>
+                      <div class="f1 mt-1">H&M Group </div>
+                      <div class="f1">Sustainability</div>
+                      <div class="f1"> Strategy</div>
+                      <div class="f1 mt-1"> H&M Group </div>
+                      <div class="f1">Sustainability</div>
+                      <div class="f1">Report</div>
+                      <div class="f1 mt-1">H&M </div>
+                      <div class="f1">Foundation</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ladies text-dark mx-2" href="#">Sale</a>
+                <div class="container text-center content content1">
+                  <div class="row align-items-start">
+                    <div class="col" style="margin: 40px 0px 0px 300px;">
+                      <div class="f1 f2"> New</div> 
+                      <div class="f1 f2">Arrivals</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1">Clothes</div> <br>
+                      <div class="f1 f2" >Trending</div>
+                      <div class="f1 f2" >Now</div>
+                      <div class="f1 mt-1">Trending</div>
+                      <div class="f1">Now</div> <br>
+                      <div class="f1 f2"> Shop by</div>
+                      <div class="f1 f2">Occasion</div>
+                      <div class="f1 mt-1">The Occasion</div>
+                      <div class="f1">Shop</div>
+                    </div>
+                    <div class="col" style="margin: 40px 0px 0px 0px;">
+                      <div class="f1 f2"> Shop by</div> 
+                      <div class="f1 f2">Product</div>
+                      <div class="f1 mt-1">View All</div>
+                      <div class="f1 mt-1">Tops & T-</div>
+                      <div class="f1">shirts</div>
+                      <div class="f1 mt-1">Dresses</div>
+                      <div class="f1 mt-1"> Shirts &</div>
+                      <div class="f1">Blouses</div>
+                      <div class="f1 mt-1">Trousers</div>
+                      <div class="f1 mt-1">Jeans</div>
+                      <div class="f1 mt-1"> Shoes</div>
+                      <div class="f1 mt-1">Accessories</div>
+                      <div class="f1 mt-1">Basic</div>
+                      <div class="f1 mt-1">Blazers</div>
+                      <div class="f1 mt-1">Skirts</div>
+                      <div class="f1 mt-1">Shorts</div>
+                      <div class="f1 mt-1">Nightwear</div>
+                      
+                    </div>
+                    <div class="col first" style="margin: 40px 350px 0px 0px;">
+                      <div class="f1 f2">Sustainability</div>
+                      <div class="f1 mt-1">H&M Take</div>
+                      <div class="f1">care</div>
+                      <div class="f1 mt-1">Learn</div>
+                      <div class="f1">More</div>
+                      <div class="f1 f2 mt-3">Magazine</div>
+                      <div class="f1 mt-1">Magazine</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+    <a class="navbar-brand shortnav ms-1" href="#">
+      <svg class="__2OnJ __2utV PH_l" width="50" height="50" viewBox="0 0 370 244"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false"
+              role="img" aria-labelledby="id-hm-logo-xlarge">
+              <title id="id-hm-logo-xlarge">H&amp;M</title>
+              <path fill="#FF0000"
+                d="M259.895 7.413c13.424-6.618 20.087-5.737 20.232.946.19 8.7-1.098 20.23-2.016 28.604-4.983 45.423-13.32 82.543-13.954 129.19 21.94-56.802 40.345-96.278 64.03-144.909 7.53-15.47 12.325-12.593 18.503-15.343 24.082-10.715 24.984-4.133 21.837 8.95-11.686 48.552-41.54 201.376-46.114 224.907-1.328 6.807-8.715 3.923-10.644 1.26-8.57-11.85-18.225-12.036-17.14-19.919 5.37-39.233 24.71-137.666 29.75-160.863-25.719 52.696-52.37 118.566-66.053 155.914-2.907 7.931-8.188 7.35-11.48 1.546-4.63-8.15-13.61-12.312-15.093-21.943-4.702-30.628 5.37-89.003 6.773-125.936-13.994 40.342-37.49 118.67-47.782 154.057-4.256 14.643-18.382 12.253-14.627-2.018 15.642-59.389 49.326-164.425 63.915-202.198 3.427-8.874 12.406-8.569 19.863-12.245zM174.6.115c4.26 1.025 3.913 6.05 1.31 12.912-7.682 20.247-18.335 46.847-30.516 78.212 7.658-.874 11.811-1.17 11.811-1.17 10.994-1.358 13.041 4.139 9.946 9.99-2.466 4.664-5.436 1.554-15.724 16.89-5.796 8.642-15.259 10.924-20.515 12.076-12.662 33.523-26.23 70.916-39.415 110.77-1.919 5.804-7.524 4.532-9.209 2.174-6.192-8.647-10.758-8.933-15.558-15.927-.577-1.132-1.706-2.672-1.027-5.448 3.53-14.425 12.901-44.067 27.156-83.091-17.958 3.892-37.387 8.076-45.408 9.94-9.626 25.445-19.014 50.967-27.908 76.18-5.518 15.64-19.88 12.617-14.84-2.165 8.028-23.548 16.89-48.004 25.776-71.72-9.948-1.063-13.313-8.088-18.873-13.958-2.147-2.267-6.828-1.948-9.12-5.127-4.123-5.711-3.712-8.248 5.81-10.996a955.318 955.318 0 0137.464-9.998c16.09-41.524 30.63-77.144 38.38-96.151C90.114-1.138 105.514.226 99.664 14.674c-11.889 29.363-24.079 59.867-36.11 90.799a880.98 880.98 0 0144.748-8.87 2312.644 2312.644 0 0134.62-83.968c.845-1.937 3.31-4.678 5.878-5.118 8.092-1.385 21.251-8.498 25.8-7.402zm-27.552 190.077c1.265-.773 2.524-1.715 3.767-2.75a756.514 756.514 0 01-2.82-8.468 139.528 139.528 0 00-2.752 3.638c-5.386 7.396-2.197 10.028 1.805 7.58zm7.167-35.065c6.67-7.53-6.516-10.681-3.48.836.17.65.382 1.413.62 2.254a98.19 98.19 0 002.86-3.09zm6.941 22.695c6.602-5.721 12.908-.046 6.38 9.628-1.404 2.08-2.99 4.318-4.729 6.522a193.17 193.17 0 002.146 5.877c3.375 8.654-5.488 10.824-8.345 3.656-.25-.626-.51-1.297-.778-1.995-5.387 4.772-11.618 7.777-18.275 5.707-10.954-3.407-13.74-18.83-3.514-30.711 4.103-4.767 7.191-8.074 9.771-10.716a251.947 251.947 0 01-1.819-6.17c-1.328-4.81-2.527-10.416 2.287-16.13 9.027-10.712 29.971-1.203 19.377 15.289-2.552 3.972-5.535 7.724-8.647 11.527a979.555 979.555 0 003.26 10.18 78.304 78.304 0 012.886-2.664z">
+              </path>
+            </svg></a>
+      <a class="navbar-brand shortnav  me-0" href="#" >
+      <svg class="__2OnJ u9au " width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+              <path
+                d="M19.346 18.24c-1.243-.425-1.477-.511-2.047-.76-2.453-1.067-3.445-2.375-2.77-4.08.142-.36.277-.648.611-1.307l.012-.024c.279-.55.386-.772.512-1.062a5.26 5.26 0 0 0 .17-.448c.191-.575.273-1.047.381-2.173l.005-.053.005-.052c.368-3.824-.147-5.244-2.249-5.973A5.822 5.822 0 0 0 12 2.001h-.014c-.271-.004-.544.01-.814.044-.4.05-.788.138-1.149.263-2.101.73-2.616 2.15-2.247 5.974l.004.041.004.043c.108 1.137.19 1.613.382 2.193.05.153.107.302.17.448.126.29.234.512.512 1.061l.012.025c.334.658.47.947.612 1.307.674 1.705-.318 3.013-2.771 4.08-.57.249-.805.336-2.046.76-1.889.648-2.83 1.506-3.117 2.816l-.001.012c.132.037.303.076.508.118a32.46 32.46 0 0 0 2.452.369c2.318.274 5.014.445 7.505.445 2.491 0 5.186-.17 7.503-.445.99-.117 1.846-.247 2.45-.37.205-.04.375-.08.507-.116-.304-1.338-1.244-2.187-3.116-2.83zM14.304 1.364c2.647.917 3.323 2.783 2.917 7.013l-.005.052-.005.053c-.115 1.194-.208 1.731-.427 2.391-.06.182-.128.36-.203.532-.135.312-.25.55-.537 1.117l-.012.023c-.321.634-.445.898-.574 1.222-.423 1.072.217 1.916 2.24 2.796.54.235.753.314 1.972.73 2.192.753 3.399 1.855 3.785 3.65l.045.42c0 .64-1.016.846-3.878 1.185a67.263 67.263 0 0 1-7.62.452 67.32 67.32 0 0 1-7.622-.452C1.516 22.209.5 22.004.503 21.306l.05-.413c.38-1.746 1.587-2.848 3.778-3.6 1.217-.416 1.432-.495 1.971-.73 2.023-.88 2.663-1.724 2.24-2.796-.128-.324-.253-.59-.574-1.222l-.012-.025a18.808 18.808 0 0 1-.537-1.115 6.292 6.292 0 0 1-.203-.532c-.22-.666-.313-1.207-.428-2.412l-.004-.043-.004-.041c-.408-4.227.27-6.096 2.915-7.013a6.589 6.589 0 0 1 1.354-.312c.313-.038.63-.056.944-.051.8-.01 1.595.113 2.311.363z">
+              </path>
+            </svg></a>
+      <a class="navbar-brand shortnav rlogo2 me-0" href="#">
+      <svg class="__2OnJ u9au " width="25" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+              <path
+                d="M11 2a9 9 0 0 1 6.866 14.82l-.159.18 4.243 4.243-.707.707L17 17.708A9 9 0 1 1 11 2zm0 1a8 8 0 1 0 0 16 8 8 0 0 0 0-16z">
+              </path>
+            </svg></a>
+      <a class="navbar-brand shortnav rlogo me-0" href="#">
+      <svg class="__2OnJ u9au" width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+              <path class="innerElement"
+                d="M17.376 1C21.476 1 24 3.556 24 7.748c0 1.614-.961 3.598-2.696 5.9-.89 1.183-1.97 2.425-3.196 3.705a71.38 71.38 0 0 1-3.987 3.832 71.307 71.307 0 0 1-1.816 1.566L12 23l-.305-.25a71.307 71.307 0 0 1-1.816-1.565 71.38 71.38 0 0 1-3.987-3.832c-1.227-1.28-2.305-2.522-3.196-3.704C.961 11.346 0 9.362 0 7.748 0 3.556 2.524 1 6.624 1c2.08 0 4.23 1.548 5.376 3.548C13.145 2.548 15.294 1 17.376 1z"
+                fill="#FFF"></path>
+              <path class="outerElement"
+                d="M17.376 1C21.476 1 24 3.578 24 7.807c0 1.628-.961 3.63-2.696 5.953-.89 1.192-1.97 2.446-3.196 3.737a71.66 71.66 0 0 1-3.987 3.865 71.495 71.495 0 0 1-1.816 1.58l-.305.251-.305-.252c-.093-.076-.264-.22-.503-.424-.396-.34-.838-.727-1.313-1.155a71.66 71.66 0 0 1-3.987-3.865c-1.227-1.291-2.305-2.545-3.196-3.737C.961 11.437 0 9.435 0 7.807 0 3.578 2.524 1 6.624 1c2.08 0 4.23 1.562 5.376 3.58C13.145 2.56 15.294 1 17.376 1zM12 21.79l.18-.154c.383-.329.812-.704 1.273-1.12a69.488 69.488 0 0 0 3.865-3.746c1.18-1.244 2.217-2.448 3.068-3.587 1.593-2.132 2.462-3.943 2.462-5.286 0-3.64-2.063-5.747-5.565-5.747-1.927 0-4.049 1.768-4.842 3.843L12 7.145l-.44-1.152C10.765 3.919 8.642 2.15 6.716 2.15c-3.502 0-5.565 2.107-5.565 5.747 0 1.343.87 3.154 2.462 5.286.85 1.14 1.887 2.343 3.068 3.587a69.488 69.488 0 0 0 3.865 3.747A69.313 69.313 0 0 0 12 21.789z">
+              </path>
+            </svg></a>
+      <a class="navbar-brand shortnav rlogo me-0" href="#">
+      <svg class="__2OnJ u9au" width="30" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+              <path
+                d="M12 .1c2.9 0 4.9 1.4 4.9 3.8v.6h3.8v5.1c0 4.7 2.1 13.3.5 13.3-.7 0-5 1.1-9.2 1.1-4.6 0-9.2-1.1-9.2-1.1-1.5 0 .5-8.7.5-13.3V4.4h3.8v-.6c0-2.4 2-3.7 4.9-3.7zm7.6 5.4h-2.7v2.2h-1.1V5.5H8.2v2.2H7.1V5.5H4.4v4c0 1.3-.1 2.9-.4 5.3l-.1.9c-.4 3-.5 3.9-.5 5v1.2c.8.1 1.6.3 2.4.4 2.1.3 4.2.5 6.1.5h.5c1.6 0 3.3-.2 5.2-.5.2 0 2-.4 2.9-.5v-1.4c0-1-.2-1.9-.5-4.7 0-.3-.1-.6-.1-.9-.3-2.4-.4-4-.4-5.3v-4zM12 1.2c-2.3 0-3.8 1-3.8 2.6v.6h7.6v-.6c0-1.7-1.5-2.6-3.8-2.6z">
+              </path>
+            </svg></a>
+  </div>
+
+
+
+  <!-- search products -->
+
+  <nav class="navbar navbar-light bg-white navbar-custom ">
+    <div class="container-fluid ">
+      <a class="navbar-brand searchbar fs-6 ml-7 " href="#">
+        <svg class="__2OnJ u9au" width="25" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+          <path
+            d="M11 2a9 9 0 0 1 6.866 14.82l-.159.18 4.243 4.243-.707.707L17 17.708A9 9 0 1 1 11 2zm0 1a8 8 0 1 0 0 16 8 8 0 0 0 0-16z">
+          </path>
+        </svg>
+        <span class="x_nB D1BA lV7j">Search products</span>
+      </a>
+    </div>
+  </nav>
+</nav>
+
+</nav>
+     
+  <!-- third navbar -->
+
+    <div class="navpage text-center fs-6 mt-2">
+        <p class="navpage">HM.com / <font color="red">Divided</font>
+        </p>
+    </div>
+    </nav>
+
+  <!-- left side content -->
+
+    <div class="container ms-0 mt-5">
+        <div class="row">
+            <div class="col-2">
+
+                <li class="pagelefth ">New Arrivals</li>
+                <li class="pageleft">Clothes</li>
+                <li class="pageleft">Accessories</li>
+                <li class="pagelefth mt-4">Trending Now</li>
+                <li class="pageleft">Trending Now</li>
+                <li class="pagelefth mt-4">Shop by Product</li>
+                <li class="pageleft">View All</li>
+                <li class="pageleft">Tops</li>
+                <li class="pageleft">Dresses</li>
+                <li class="pageleft">Trousers & Leggings</li>
+                <li class="pageleft">Jeans</li>
+                <li class="pageleft">Shirt & Blouses</li>
+                <li class="pageleft">Shorts</li>
+                <li class="pageleft">Divided - Skirts</li>
+                <li class="pageleft">Divided - Basic</li>
+                <li class="pageleft">Accessories</li>
+                <li class="pageleft">Underwear & Nightwear</li>
+                <li class="pageleft">Swimwear</li>
+                <li class="pageleft">Shoes</li>
+                <li class="pageleft">Cardigans & Jumpers</li>
+                <li class="pageleft">Hoodies & Sweatshirts</li>
+                <li class="pageleft">Jackets & Coats </li>
+                <li class="pageleft">Care Products</li>
+                <li class="pagelefth mt-4">Sustainability</li>
+                <li class="pageleft">H&M Take Care</li>
+                <li class="pageleft">Learn More</li>
+
+            </div>
+
+             <!-- right side content -->
+
+            <div class="col-8 w-75">
+
+            <!-- first one -->
+            <div class="container d1  common text-center text-white mt-4">
+              <h6 class="card-title fs-1" style="padding-top: 300px;">Denim diva</h6>
+              <h5 class="card-title1">Indulge from top to toe</h5>
+              <a href="#" class="btn btn-light btnd-sm mt-3 mb-5">Shop Now</a>
+            </div>
+
+            <!-- second box --> 
+
+                <header class=" header4 text-center text-white"
+                    style="background-image: url(ladies/4.jpeg); margin: 20px 0px 0px 0px;">
+                    <h4 class="header5 fs-3 pt-4">Pair it up! </h4>
+                    <p class="header6 small">All style, no fuss.</p>
+                    <div class="container mt-3">
+                        <button type="button" class="btn btn-light mb-2">Shop Now</button>
+                    </div>
+                </header>
+
+
+            <!-- pink bacground third box -->
+
+                <div class="container l3  common text-center text-white mt-4">
+                  <h6 class="card-title fs-1" style="padding-top: 350px;">Casual or chic? You choose!</h6>
+                    <h5 class="card-title1">Styles at irresistible prices </h5>
+                    <a href="#" class="btn btn-light btnd-sm mt-3 mb-5">Shop Now</a>
+                
+                </div>
+
+            <!-- red girl forth box -->
+                
+                <div class="container d2  common text-center text-white mt-4">
+                  <h6 class="card-title fs-1" style="padding-top: 350px;">Sporty Success</h6>
+                  <h5 class="card-title1">Why wear anything else than a tracksuit?</h5>
+                  <a href="#" class="btn btn-light btnd-sm mt-3 mb-5">Shop Now</a>
+               
+                </div>
+                
+
+              <!-- blue background fifth box -->
+
+                <header class=" header4 text-center text-white"
+                    style="background-image: url(divided/3.jpeg); margin: 20px 0px 0px 0px;">
+                    <h4 class="header5 fs-3 pt-4">Back to Campus! </h4>
+                    <p class="header6 small">Shop for your next semester styles!</p>
+                    <div class="container mt-3">
+                        <button type="button" class="btn btn-light mb-2">Shop Now</button>
+                    </div>
+                </header>
+                
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+     <footer class="flast mt-4" style="background-color: #e4e4e4; height: 600px;">
+            <div class="container" style="width: 100%;">
+                <div class="row row-cols-4">
+                    <div class="col">
+                        <li class="footer-item"><strong>SHOP</strong></li>
+                        <li class="footer-item">Ladies</li>
+                        <li class="footer-item">Men</li>
+                        <li class="footer-item">Baby</li>
+                        <li class="footer-item">Kids</li>
+                        <li class="footer-item">H&M HOME</li>
+                        <li class="footer-item">Sport</li>
+                    </div>
+                    <div class="col">
+                        <li class="footer-item"><strong>CORPORATE INFO</strong></li>
+                        <li class="footer-item">Career at H&M</li>
+                        <li class="footer-item">About H&M group</li>
+                        <li class="footer-item">Sustainability H&M Group</li>
+                        <li class="footer-item">Press</li>
+                        <li class="footer-item">Investors elations</li>
+                        <li class="footer-item">Corporate governance</li>
+                    </div>
+                    <div class="col">
+                        <li class="footer-item"><strong>HELP</strong></li>
+                        <li class="footer-item">Customer Service</li>
+                        <li class="footer-item">My H&M</li>
+                        <li class="footer-item">Find a store</li>
+                        <li class="footer-item">Legal & Privacy</li>
+                        <li class="footer-item">Contact</li>
+                        <li class="footer-item">Report a scam</li>
+                        <li class="footer-item">Cookie Notice</li>
+                        <li class="footer-item">Cookie Settings</li>
+                    </div>
+
+                    <div class="col footer-item pt-3 ">
+                        <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style
+                            tips!</p>
+                        <p class="card-text cardTextboth mt-auto"> Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container logos">
+                <div class="row row-cols-auto">
+                    <div class="col p-3">
+                        <svg class="__2OnJ u9au" viewBox="0 0 24 24" width="22" height="22"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            focusable="false">
+                            <path
+                                d="M3.994 3A.993.993 0 003 3.994v16.012c0 .549.445.994.994.994h8.62v-6.97h-2.346v-2.718h2.347V9.31c0-2.325 1.419-3.591 3.493-3.591.994 0 1.847.075 2.097.107v2.43l-1.439.001c-1.128 0-1.346.535-1.346 1.322v1.734h2.69l-.35 2.718h-2.34V21h4.586a.994.994 0 00.994-.994V3.994A.993.993 0 0020.006 3H3.994z">
+                            </path>
+                        </svg>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg> -->
+                    </div>
+                    <div class="col p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                    <div class="col p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="col p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                    </div>
+                    <div class="col p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-pinterest" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <p class="fpara">The content of this site is copyright-protected and is the property of H & M Hennes &
+                Mauritz AB.</p>
+            <div class="fl">
+
+                <svg class="__2OnJ __2utV PH_l mx-5" width="40" height="40" viewBox="0 0 370 244"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false"
+                    role="img" aria-labelledby="id-hm-logo-xlarge">
+                    <title id="id-hm-logo-xlarge">H&amp;M</title>
+                    <path fill="text-white"
+                        d="M259.895 7.413c13.424-6.618 20.087-5.737 20.232.946.19 8.7-1.098 20.23-2.016 28.604-4.983 45.423-13.32 82.543-13.954 129.19 21.94-56.802 40.345-96.278 64.03-144.909 7.53-15.47 12.325-12.593 18.503-15.343 24.082-10.715 24.984-4.133 21.837 8.95-11.686 48.552-41.54 201.376-46.114 224.907-1.328 6.807-8.715 3.923-10.644 1.26-8.57-11.85-18.225-12.036-17.14-19.919 5.37-39.233 24.71-137.666 29.75-160.863-25.719 52.696-52.37 118.566-66.053 155.914-2.907 7.931-8.188 7.35-11.48 1.546-4.63-8.15-13.61-12.312-15.093-21.943-4.702-30.628 5.37-89.003 6.773-125.936-13.994 40.342-37.49 118.67-47.782 154.057-4.256 14.643-18.382 12.253-14.627-2.018 15.642-59.389 49.326-164.425 63.915-202.198 3.427-8.874 12.406-8.569 19.863-12.245zM174.6.115c4.26 1.025 3.913 6.05 1.31 12.912-7.682 20.247-18.335 46.847-30.516 78.212 7.658-.874 11.811-1.17 11.811-1.17 10.994-1.358 13.041 4.139 9.946 9.99-2.466 4.664-5.436 1.554-15.724 16.89-5.796 8.642-15.259 10.924-20.515 12.076-12.662 33.523-26.23 70.916-39.415 110.77-1.919 5.804-7.524 4.532-9.209 2.174-6.192-8.647-10.758-8.933-15.558-15.927-.577-1.132-1.706-2.672-1.027-5.448 3.53-14.425 12.901-44.067 27.156-83.091-17.958 3.892-37.387 8.076-45.408 9.94-9.626 25.445-19.014 50.967-27.908 76.18-5.518 15.64-19.88 12.617-14.84-2.165 8.028-23.548 16.89-48.004 25.776-71.72-9.948-1.063-13.313-8.088-18.873-13.958-2.147-2.267-6.828-1.948-9.12-5.127-4.123-5.711-3.712-8.248 5.81-10.996a955.318 955.318 0 0137.464-9.998c16.09-41.524 30.63-77.144 38.38-96.151C90.114-1.138 105.514.226 99.664 14.674c-11.889 29.363-24.079 59.867-36.11 90.799a880.98 880.98 0 0144.748-8.87 2312.644 2312.644 0 0134.62-83.968c.845-1.937 3.31-4.678 5.878-5.118 8.092-1.385 21.251-8.498 25.8-7.402zm-27.552 190.077c1.265-.773 2.524-1.715 3.767-2.75a756.514 756.514 0 01-2.82-8.468 139.528 139.528 0 00-2.752 3.638c-5.386 7.396-2.197 10.028 1.805 7.58zm7.167-35.065c6.67-7.53-6.516-10.681-3.48.836.17.65.382 1.413.62 2.254a98.19 98.19 0 002.86-3.09zm6.941 22.695c6.602-5.721 12.908-.046 6.38 9.628-1.404 2.08-2.99 4.318-4.729 6.522a193.17 193.17 0 002.146 5.877c3.375 8.654-5.488 10.824-8.345 3.656-.25-.626-.51-1.297-.778-1.995-5.387 4.772-11.618 7.777-18.275 5.707-10.954-3.407-13.74-18.83-3.514-30.711 4.103-4.767 7.191-8.074 9.771-10.716a251.947 251.947 0 01-1.819-6.17c-1.328-4.81-2.527-10.416 2.287-16.13 9.027-10.712 29.971-1.203 19.377 15.289-2.552 3.972-5.535 7.724-8.647 11.527a979.555 979.555 0 003.26 10.18 78.304 78.304 0 012.886-2.664z">
+                    </path>
+                </svg>
+
+
+                <p class="fpara" style="margin: 10px;">INDIA | Rs.</p>
+
+            </div>
+        </footer>
+
+</body>
+
+</html>
