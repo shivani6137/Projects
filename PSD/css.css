@@ -1,0 +1,994 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-image: url(Images/Shape\ \(18\).png);
+}
+
+.mlogo {
+    margin: 0px 0px 20px 80px;
+    height: 50px;
+}
+
+.mnav {
+    position: relative;
+    margin: 0px 0px 35px 150px;
+    height: 17px;
+}
+
+.searchbac1 {
+    position: relative;
+    margin: 30px 0px 5px 100px;
+    height: 60px;
+}
+
+.searchbac2 {
+    position: absolute;
+    margin: 34px 0px 5px -22px;
+    height: 34px;
+}
+
+.search {
+    background-color: #fcc302;
+    position: absolute;
+    margin: 42px 0px 0px -150px;
+}
+
+.searchb {
+    background-color: #00bec9;
+    position: absolute;
+    margin: 42px 0px 0px -10px;
+}
+
+#main1 {
+    width: 100%;
+    height: 650px;
+    background-image: url(Images/Shape\ \(23\).png);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.m1h1 {
+    margin: 240px 0px 0px 90px;
+    font-size: 57px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.m1h2 {
+    margin: 30px 0px 0px 90px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+#mb1 {
+    margin: 30px 0px 0px 90px;
+    border: none;
+    background-color: #00bec9;
+}
+
+#mb2 {
+    margin: 0px 0px 0px 20px;
+    background-color: #fcc302;
+    border: 2px solid white;
+}
+
+.btnsame {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 150px;
+    height: 39px;
+    border-radius: 7px;
+    background-color: #fcc302;
+    border: 2px solid white;
+}
+
+.dog {
+
+    height: 550px;
+    margin: 120px 0px 0px 200px;
+}
+
+#main2 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+
+.m2h1 {
+    margin: 150px 0px 0px 90px;
+    font-size: 50px;
+    color: #313243;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.m2h2 {
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #313243;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 20px 0px 0px 90px;
+}
+
+#m2b {
+    background-color: #fcc302;
+    border: none;
+    margin: 40px 0px 0px 90px;
+}
+
+.m2small {
+    /* width: 100%; */
+    height: 150px;
+    background-color: #fcc302;
+    margin: 350px 0px 0px 150px;
+}
+
+.m2pic {
+    position: absolute;
+    margin: 130px 0px 0px -160px;
+    height: 350px;
+}
+
+.m2round {
+    height: 70px;
+    position: absolute;
+    margin: 260px 0px 0px -20px;
+    z-index: 1;
+}
+
+.m2play {
+    height: 30px;
+    position: absolute;
+    margin: 280px 0px 0px 7px;
+    z-index: 1;
+}
+
+.m2cover {
+    position: absolute;
+    margin: 130px 0px 0px -160px;
+    height: 350px;
+}
+
+#main3 {
+    width: 100%;
+    height: 650px;
+    background-color: #fcc302;
+}
+
+.m3box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.m3h1 {
+    padding-top: 60px;
+    font-size: 65px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.m3h2 {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.m3one {
+    text-align: center;
+    justify-content: center;
+}
+
+.m3pic {
+    height: 220px;
+    margin: 50px 0px 0px 0px;
+}
+
+.m3sub1 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 10px;
+}
+
+.m3sub2 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 20px;
+}
+
+.m2smalldiffe {
+    margin: 350px 0px 0px 90px;
+}
+
+.m4two {
+    margin-left: 260px;
+    text-align: right;
+}
+
+.m5btn {
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #00bec9;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    border: none;
+    margin: 20px 0px 0px 0px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+.m5price1 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 20px 0px 0px 0px;
+
+
+}
+
+.m5price2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 20px 0px 0px 20px;
+
+}
+
+#price1 {
+    margin: 20px 0px 0px 0px;
+}
+
+.m5pic {
+    height: 220px;
+    margin: 50px 0px 0px 0px;
+}
+
+#main6 {
+    width: 100%;
+    height: 550px;
+
+}
+
+.m6h1 {
+    font-size: 65px;
+    color: #313243;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    padding-top: 50px;
+}
+
+.m6h2 {
+    font-size: 20px;
+    color: #313243;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 20px;
+}
+
+.m6sub1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 20px;
+}
+
+.m6sub2 {
+    font-size: 15px;
+    color: #313243;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+.main7 {
+    width: 100%;
+    height: 500px;
+    background-image: url(Images/Place\ Your\ Image\ Here\ \(11\).png);
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.piclogo {
+    position: relative;
+    z-index: 1;
+}
+
+.m71 {
+
+    width: 110px;
+    height: 97px;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+
+.m72 {
+
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: right;
+    margin-top: 30px;
+}
+
+.m73 {
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: right;
+}
+
+.m7shape {
+
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+    background-image: url(Images/Shape\ \(25\).png);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.fh1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 120px 0px 10px 0px;
+}
+
+.fh {
+    font-size: 18px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-bottom: -10px;
+}
+
+.fh3 {
+    font-size: 18px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.ftitle {
+    text-align: right;
+}
+
+.fpic1 {
+    margin: 20px 0px 0px 80px;
+}
+
+.fpic2 {
+    margin: 0px 0px 33px -34px;
+}
+
+.fpic3 {
+    position: absolute;
+    margin: 40px 0px 0px -56px;
+}
+
+.icon1 {
+    margin-right: 20px;
+}
+
+#main8 {
+    width: 100%;
+    height: 740px;
+}
+
+.m8sub {
+    font-size: 15px;
+    color: #00bec9;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-top: 10px;
+}
+
+.m8one {
+    width: 361px;
+    height: 460px;
+    filter: drop-shadow(5.634px 10.595px 25.5px rgba(74, 74, 74, 0.1));
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1139px) {
+    .mlogo {
+        margin: 0px 0px 20px 50px;
+        height: 40px;
+    }
+
+    .mnav {
+        margin: 0px 0px 35px 80px;
+        height: 14px;
+    }
+
+    .searchbac1 {
+        margin: 30px 0px 5px 50px;
+        height: 50px;
+    }
+
+    .searchbac2 {
+        margin: 34px 0px 5px -22px;
+        height: 28px;
+    }
+
+    .search {
+        height: 10px;
+        margin: 42px 0px 0px -140px;
+    }
+
+    .searchb {
+        height: 10px;
+        background-color: #00bec9;
+        position: absolute;
+        margin: 42px 0px 0px 0px;
+    }
+
+    .m1h1 {
+        font-size: 47px;
+    }
+
+    .m1h2 {
+        font-size: 14px;
+    }
+
+    .btnsame {
+        font-size: 21px;
+        height: 30px;
+    }
+
+    .dog {
+        height: 450px;
+        margin: 140px 0px 0px 100px;
+    }
+
+    .m2h1 {
+        margin: 150px 0px 0px 40px;
+        font-size: 40px;
+    }
+
+    .m2h2 {
+        font-size: 17px;
+        margin: 20px 0px 0px 40px;
+    }
+
+    #m2b {
+        margin: 40px 0px 0px 40px;
+    }
+
+    .m2small {
+        height: 150px;
+        margin: 300px 0px 0px 70px;
+    }
+
+    .m2pic, .m2cover  {
+        height: 300px;
+    }
+
+    .m2round {
+        height: 50px;
+    }
+
+    .m2play {
+        height: 25px;
+        margin: 270px 0px 0px 0px;
+    }
+
+    .m4two {
+        margin-left: 170px;
+        float: right;
+    }
+
+    .m4one {
+        margin-left: 50px;
+    }
+
+    .m4h1 {
+        margin: 150px 0px 0px 40px;
+        font-size: 30px;
+    }
+
+    .m4h2 {
+        font-size: 14px;
+        margin: 20px 0px 0px 40px;
+    }
+
+    .m4b {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:839px) {
+    .mlogo {
+        margin: 20px 0px 20px 20px;
+        height: 30px;
+    }
+
+    .mnav {
+        margin: 0px 0px 35px 40px;
+        height: 10px;
+    }
+
+    .searchbac1 {
+        width: 20%;
+        margin: 30px 0px 5px 20px;
+        height: 50px;
+    }
+
+    .search {
+        height: 10px;
+        margin: 42px 0px 0px -100px;
+    }
+
+    #main1 {
+        height: 550px;
+    }
+
+    .m1h1 {
+        font-size: 37px;
+        margin: 200px 0px 0px 50px;
+    }
+
+    .m1h2 {
+        font-size: 12px;
+        margin: 10px 0px 0px 50px;
+    }
+
+    .btnsame {
+        font-size: 13px;
+        height: 30px;
+        width: 30%;
+    }
+
+    #mb1 {
+        margin: 30px 0px 0px 50px;
+    }
+
+    .dog {
+        height: 350px;
+        margin: 140px 0px 0px 70px;
+    }
+
+    .m2small {
+        height: 100px;
+        margin: 300px 0px 0px -10px;
+    }
+
+    .m2pic {
+        height: 240px;
+        margin: 150px 0px 0px -110px;
+    }
+
+    .m2round {
+        height: 40px;
+        margin: 250px 0px 0px -10px;
+    }
+
+    .m2play {
+        height: 20px;
+        margin: 260px 0px 0px 5px;
+    }
+
+    .m2cover {
+        height: 240px;
+        margin: 150px 0px 0px -110px;
+    }
+
+    .m2h1 {
+        font-size: 30px;
+    }
+
+    #main3 {
+        height: 550px;
+    }
+
+    .m3h1, .m6h1 {
+        font-size: 45px;
+    }
+
+    .m3h2, .m6h2 {
+        font-size: 17px;
+    }
+
+
+    .m3pic, .m5pic {
+        height: 150px;
+    }
+
+    .m3sub1, .m6sub1 {
+        font-size: 18px;
+    }
+
+    .m3sub2, .m6sub2 {
+        font-size: 12px;
+    }
+
+    .m5btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+
+    .m5price1 {
+        font-size: 17px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .m5price2 {
+        font-size: 17px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .m71 {
+
+        width: 80px;
+        height: 70px;
+    }
+
+    .m72 {
+        font-size: 32px;
+    }
+
+    .m73 {
+        font-size: 28px;
+    }
+
+    .footer {
+        height: 500px;
+        width: 100%;
+        background-image: url(Images/Shape\ \(25\).png);
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .fh1 {
+        font-size: 18px;
+        margin: 120px 0px 0px 0px;
+    }
+
+    .fh, .fh3, .m2h2 {
+        font-size: 13px;
+    }
+
+    .fpic1 {
+        margin: 20px 0px 0px 0px;
+        height: 60px;
+    }
+
+    .fpic2 {
+        position: absolute;
+        margin: 24px 0px 0px -44px;
+        height: 35px;
+
+    }
+
+    .fpic3 {
+        height: 20px;
+        margin: 35px 0px 0px -26px;
+    }
+
+    .icon1 {
+        margin-right: 6px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .mlogo {
+        margin: 30px 0px 20px 5px;
+        height: 30px;
+    }
+
+    .mnav {
+        position: relative;
+        margin: 0px 0px 35px 16px;
+        height: 10px;
+    }
+
+    .searchbac1, .searchb, .searchbac2, .search {
+        display: none;
+    }
+
+    #main3 {
+        height: 480px;
+    }
+
+    .m3h1 {
+        font-size: 35px;
+        padding-top: 35px;
+    }
+
+    .m3h2, .m6h2 {
+        font-size: 14px;
+    }
+
+
+    .m3pic {
+        height: 120px;
+    }
+
+    .m3sub1, .m6sub1 {
+        font-size: 13px;
+    }
+
+    .m3sub2, .m6sub2 {
+        font-size: 10px;
+    }
+
+    .m5btn {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+
+    .m5price1 {
+        font-size: 14px;
+    }
+
+    .m5price2 {
+        font-size: 14px;
+        margin: 20px 0px 0px 10px;
+    }
+
+    .m5pic {
+        height: 120px;
+    }
+
+    .m6h1 {
+        font-size: 35px;
+    }
+
+    #main6 {
+        height: 480px;
+    }
+
+    .m8one {
+        height: 350px;
+    }
+
+    #main8 {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .m1h1 {
+        font-size: 20px;
+        margin: 200px 0px 0px 20px;
+    }
+
+    #main1 {
+        height: 500px;
+    }
+
+    .m1h2 {
+        font-size: 12px;
+        margin: 10px 0px 0px 20px;
+    }
+
+    .btnsame {
+        font-size: 8px;
+        height: 30px;
+        width: 30%;
+    }
+
+    #mb1 {
+        margin: 30px 0px 0px 20px;
+    }
+
+
+    .dog {
+        height: 270px;
+        margin: 140px 0px 0px 4px;
+    }
+
+    #main2 {
+        height: 400px;
+    }
+
+    .m2small {
+        height: 80px;
+        margin: 250px 0px 0px -40px;
+    }
+
+    .m2pic {
+        height: 180px;
+        margin: 130px 0px 0px -80px;
+    }
+
+    .m2round {
+        height: 30px;
+        margin: 200px 0px 0px 0px;
+    }
+
+    .m2play {
+        height: 14px;
+        margin: 210px 0px 0px 10px;
+
+    }
+
+    .m2cover {
+        height: 180px;
+        margin: 130px 0px 0px -80px;
+    }
+
+    .m2h1 {
+        margin: 150px 0px 0px 10px;
+        font-size: 20px;
+    }
+
+    .m2h2 {
+        font-size: 10px;
+        margin: 20px 30px 0px 10px;
+    }
+
+    #m2b {
+
+        margin: 40px 0px 0px 10px;
+    }
+
+    .m4b {
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    .m4h2 {
+        margin-right: 30px;
+    }
+
+    .m4h1 {
+        margin-right: 0px;
+        margin-top: 130px;
+    }
+
+    .m71 {
+
+        width: 60px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .m72 {
+
+        font-size: 20px;
+
+    }
+
+    .m73 {
+        font-size: 12px;
+
+    }
+
+}
+
+@media screen and (max-width:435px) {
+    .m2small {
+        height: 50px;
+        margin: 250px 0px 0px -40px;
+    }
+
+    .m2pic {
+        height: 130px;
+        margin: 160px 0px 0px -50px;
+    }
+
+    .m2round {
+        height: 25px;
+        margin: 215px 0px 0px 0px;
+    }
+
+    .m2play {
+        height: 14px;
+        margin: 220px 0px 0px 10px;
+    }
+
+    .m2cover {
+        height: 130px;
+        margin: 160px 0px 0px -50px;
+    }
+
+    .m4two {
+        margin-left: 140px;
+        float: right;
+        margin-top: 0px;
+    }
+
+    .fh1 {
+        font-size: 14px;
+        margin: 120px 0px 0px 0px;
+    }
+
+    .fh, .fh3{
+        font-size: 10px;
+    }
+
+    .fpic1 {
+        margin: 20px 0px 0px 0px;
+        height: 40px;
+    }
+
+    .fpic2 {
+        position: absolute;
+        margin: 23px 0px 0px -44px;
+        height: 23px;
+
+    }
+
+    .fpic3 {
+        height: 13px;
+        margin: 30px 0px 0px -36px;
+    }
+
+    .icon1 {
+        margin-right: 8px;
+        height: 15px;
+    }
+
+}
