@@ -1,0 +1,299 @@
+{
+  "customer": [
+    {
+      "id": "1708498567287",
+      "name": "Trupti",
+      "email": "trupti@gmail.com",
+      "password": "1234",
+      "mobile": "1234567678",
+      "status": "Unblock",
+      "img": ""
+    },
+    {
+      "id": "1708499741717",
+      "name": "kiran",
+      "email": "kiran@gmail.com",
+      "password": "1234",
+      "mobile": "3456765678",
+      "status": "Unblock"
+    },
+    {
+      "id": "1709657543458",
+      "name": "Dimple",
+      "email": "dimple56@gmail.com",
+      "password": "1234",
+      "mobile": "3434567889",
+      "status": "Unblock"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1708495542952",
+      "name": "jigna",
+      "email": "jigna@gmail.com",
+      "password": "1234",
+      "mobile": "1234567878",
+      "img": "https://img.freepik.com/free-photo/young-lady-showing-meditation-gesture-checked-shirt-looking-hopeful-front-view_176474-54320.jpg?size=626&ext=jpg&ga=GA1.1.666454896.1684400013&semt=ais",
+      "status": "Active"
+    },
+    {
+      "id": "1708495566240",
+      "name": "Karan",
+      "email": "karan@gmail.com",
+      "password": "1234",
+      "mobile": "01234567897",
+      "img": "https://img.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_496169-1513.jpg?size=626&ext=jpg&ga=GA1.1.92893072.1701743359&semt=sph",
+      "status": "Active"
+    },
+    {
+      "id": "1708882666481",
+      "name": "Sidharth",
+      "email": "sidharth@gmail.com",
+      "password": "1234",
+      "mobile": "2343434343",
+      "img": "https://www.freepik.com/free-photo/close-up-assortment-organic-fruits_7325478.htm#fromView=search&page=1&position=0&uuid=6eecf6e0-1a9d-45bd-be6e-9e3ccf43d074",
+      "status": "Active"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1709639765714",
+      "cate_name": "Vegetables",
+      "cate_img": "https://img.freepik.com/free-photo/picture-vegetables-fruits-with-blue-background_1340-23458.jpg?t=st=1709639738~exp=1709643338~hmac=3f9690080a65226204cde86c5d0bcd45c892c0852bd37c73cc15d2f52a2343a3&w=900",
+      "status": "In stock"
+    },
+    {
+      "id": "1709639895448",
+      "cate_name": "Fruits",
+      "cate_img": "https://img.freepik.com/free-photo/top-view-copy-space-cherry-plum-with-oranges-plums-lemons-limes-yellow-plate-turquoise-background_141793-49594.jpg?t=st=1709639877~exp=1709643477~hmac=d20fac191c6180aeec72c115c110c09104ebd7db3724ac8cc1fbdb639bb539a3&w=900",
+      "status": "In stock"
+    },
+    {
+      "id": "1709640236743",
+      "cate_name": "Juices",
+      "cate_img": "https://img.freepik.com/free-photo/immunity-boosting-food-healthy-lifestyle-with-citrus_23-2149211498.jpg?t=st=1709640224~exp=1709643824~hmac=6dde982109fafd925f35e175d54cdf14ca6ec464f4c4f9458993de66f6a929d1&w=900",
+      "status": "In stock"
+    },
+    {
+      "id": "1709640635635",
+      "cate_name": "Exotic Vegetables",
+      "cate_img": "https://img.freepik.com/free-photo/top-view-copy-space-colored-bell-peppers-with-broccoli-wooden-background_141793-49605.jpg?t=st=1709640616~exp=1709644216~hmac=3b5cf24f996c9c21ee65476e035e426b6c5e8d9c098f37709bb5db1f0fe019d8&w=900",
+      "status": "Out stock"
+    },
+    {
+      "id": "1709640754228",
+      "cate_name": "Exotic Fruits",
+      "cate_img": "https://img.freepik.com/free-photo/top-view-assortment-exotic-fruits_23-2148482296.jpg?t=st=1709640736~exp=1709644336~hmac=e7d711d4a3e180726e995077c5eb9267692ec19152861630d18f49574aa9053a&w=900",
+      "status": "Out stock"
+    }
+  ],
+  "services": [
+    {
+      "id": "1709642318523",
+      "cate_id": "1709639765714",
+      "name": "Okra",
+      "desc": "Okra is rich in magnesium, folate, fiber, antioxidants, and vitamins C, K1 and A. It may help support healthy pregnancy, heart health, blood sugar. it may even have anticancer properties.",
+      "price": "50",
+      "img": "https://img.freepik.com/premium-photo/young-okra-isolated-white-background_147493-714.jpg?w=1060",
+      "status": "Available"
+    },
+    {
+      "id": "1709653535523",
+      "cate_id": "1709639765714",
+      "name": "Potato",
+      "desc": "Potatoes contain antioxidants and supply beneficial vitamins and minerals, including vitamin C, B6, and potassium. They may also benefit your digestive health.",
+      "price": "40",
+      "img": "https://img.freepik.com/free-photo/basket-white-potatoes_1268-25051.jpg?t=st=1709653534~exp=1709657134~hmac=e7e27f8e67f107c3c1190a355d8d80bb308b7dd1fa0ef91068ca6ce888f0e00e&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709653781176",
+      "cate_id": "1709639765714",
+      "name": "Bitter Gourd ",
+      "desc": "As a rich source of antioxidants, flavonoids, and other polyphenol compounds, bitter gourd may help to reduce your risks for a number of health issues.",
+      "price": "45",
+      "img": "https://img.freepik.com/free-photo/glass-bitter-gourd-smoothie-with-shopped-bitter-gourd_1150-35377.jpg?t=st=1709653773~exp=1709657373~hmac=1d3ca1be4c57694362b9dd57b18c5c0c59a54d43de1a7634dd9bf58f9e4c6dd2&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709654274015",
+      "cate_id": "1709639895448",
+      "name": "Banana",
+      "desc": "",
+      "price": "55",
+      "img": "https://img.freepik.com/free-vector/vector-ripe-yellow-banana-bunch-isolated-white-background_1284-45456.jpg?t=st=1709654262~exp=1709657862~hmac=0d3d5549efddf98f63bd41a9d8e4b969776e71e9ee0f9bddb1f42680ce9d4c88&w=740",
+      "status": "Available"
+    },
+    {
+      "id": "1709654327889",
+      "cate_id": "1709639895448",
+      "name": "Apple",
+      "desc": "",
+      "price": "150",
+      "img": "https://img.freepik.com/free-photo/delicious-red-apples-studio_23-2150811013.jpg?t=st=1709654314~exp=1709657914~hmac=731c2805bde389a5cd97aa47ab32a07a27e63f7c78f8da1f8fd54159394707dc&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709654376105",
+      "cate_id": "1709639895448",
+      "name": "Orange",
+      "desc": "",
+      "price": "80",
+      "img": "https://img.freepik.com/free-photo/fresh-orange-isolated-white-background_93675-131671.jpg?t=st=1709654371~exp=1709657971~hmac=37d85761df933bf577c32bd9a2780d7af4b5b0e1ec86f21960185f845be62e7e&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709654457044",
+      "cate_id": "1709640236743",
+      "name": "Watermelon Juice",
+      "desc": "",
+      "price": "170",
+      "img": "https://img.freepik.com/free-photo/slices-fruits-board-glasses-with-cocktail-napkin_23-2148107900.jpg?t=st=1709654452~exp=1709658052~hmac=4c40c2aba6e7c2bc72284f9cde5969044fa5c8982d294bb7f63d25712a52bd12&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709654556998",
+      "cate_id": "1709640236743",
+      "name": "Pineapple Juice",
+      "desc": "",
+      "price": "120",
+      "img": "https://img.freepik.com/free-photo/pineapple-with-candied-rings-juice-wooden-surface_176474-8702.jpg?t=st=1709654550~exp=1709658150~hmac=2524db6947a3c5784bf66cae7ca44519be1025c19fa3a1098cf04f36cdb4e7cc&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709654617714",
+      "cate_id": "1709640236743",
+      "name": "Orange Juice",
+      "desc": "",
+      "price": "140",
+      "img": "https://img.freepik.com/free-photo/glass-cup-fresh-orange-juice-wooden-board_114579-38557.jpg?t=st=1709654611~exp=1709658211~hmac=54ce5b1af25a839f2a8ce479265e210190d674850dd901b64b0723212df962dd&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709656375064",
+      "cate_id": "1709640635635",
+      "name": "Broccoli",
+      "desc": "",
+      "price": "100",
+      "img": "https://img.freepik.com/free-photo/fresh-broccoli-cutting-board-table_176474-430.jpg?t=st=1709656359~exp=1709659959~hmac=428f6f7e4886869375528545d382754fdbe89272883cb8c5251b7cc098884bd5&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709656604337",
+      "cate_id": "1709640635635",
+      "name": "Baby corn",
+      "desc": "",
+      "price": "80",
+      "img": "https://img.freepik.com/free-photo/baby-corn-is-placed-glass-wooden-floor_1150-20386.jpg?t=st=1709656592~exp=1709660192~hmac=8fcf08ff094dd8ef45afefa2426c53ae37553ff349236391725bba48c768d6fa&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709656796151",
+      "cate_id": "1709640635635",
+      "name": "Lettuce",
+      "desc": "",
+      "price": "130",
+      "img": "https://img.freepik.com/free-photo/fresh-green-lettuce-marble-background-high-quality-photo_114579-26804.jpg?t=st=1709656782~exp=1709660382~hmac=bc1357e9dcc08cb57a860e4d4f37dfa3d0e222d2d8f2f27a37b5a9292a81aefb&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709656955194",
+      "cate_id": "1709640754228",
+      "name": "Dragon Fruit",
+      "desc": "",
+      "price": "60",
+      "img": "https://img.freepik.com/free-photo/dragon-fruit-old-wood-background_1150-37978.jpg?t=st=1709656940~exp=1709660540~hmac=85923c04c70f16df5ba258630f922f5ee3690974381ef916ab2d8a0d540f9cc1&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709657124165",
+      "cate_id": "1709640754228",
+      "name": "Lychee",
+      "desc": "",
+      "price": "150",
+      "img": "https://img.freepik.com/free-photo/red-lychee-fruit-placed-basket_1150-13756.jpg?t=st=1709657095~exp=1709660695~hmac=68956882dcd87059f0b49b7f0a347dcb35ff4d0fb13216566d1a549ef03205fa&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1709657416415",
+      "cate_id": "1709640754228",
+      "name": "Blue Berry",
+      "desc": "",
+      "price": "200",
+      "img": "https://img.freepik.com/free-photo/lots-blueberries_144627-395.jpg?t=st=1709657396~exp=1709660996~hmac=06277b364149c2776ecce99e11711bc3276489b891da719fb120116171700d21&w=900",
+      "status": "Available"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1708881198031",
+      "name": "Riya",
+      "email": "riya@gmail.com",
+      "comment": "Packaging was good."
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "cust_id": 1,
+      "service_id": 1,
+      "status": "Confirmed"
+    },
+    {
+      "id": "2",
+      "cust_id": 2,
+      "service_id": 3,
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "cust_id": 3,
+      "service_id": 2,
+      "status": "Cancelled"
+    },
+    {
+      "id": "4",
+      "cust_id": 4,
+      "service_id": 5,
+      "status": "Confirmed"
+    },
+    {
+      "id": "5",
+      "cust_id": 5,
+      "service_id": 4,
+      "status": "Pending"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "1",
+      "booking_id": 1,
+      "cust_id": 1,
+      "comment": "Great service! Highly recommended."
+    },
+    {
+      "id": "2",
+      "booking_id": 2,
+      "cust_id": 2,
+      "comment": "The experience was okay, but could be improved."
+    },
+    {
+      "id": "3",
+      "booking_id": 3,
+      "cust_id": 3,
+      "comment": "Excellent service. Will definitely use again."
+    },
+    {
+      "id": "4",
+      "booking_id": 4,
+      "cust_id": 4,
+      "comment": "The service exceeded my expectations."
+    },
+    {
+      "id": "5",
+      "booking_id": 5,
+      "cust_id": 5,
+      "comment": "Had some issues with the booking process, but overall satisfied."
+    }
+  ]
+}

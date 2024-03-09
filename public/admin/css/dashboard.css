@@ -1,0 +1,105 @@
+.admin-dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f3f9f3; /* Light green background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #228b22; /* Dark green */
+}
+
+
+.stat-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #c1ffc1; /* Lighter shade of green */
+  border: 1px solid #228b22; /* Dark green border */
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Move card up slightly on hover */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+  color: #228b22; /* Dark green */
+}
+
+.recent-orders {
+  background-color: #c1ffc1; /* Lighter shade of green */
+  border: 1px solid #228b22; /* Dark green border */
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.recent-orders h3 {
+  margin-bottom: 10px;
+  color: #228b22; /* Dark green */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #228b22; /* Dark green */
+}
+
+ul li::before {
+  content: '#';
+  color: #228b22; /* Dark green */
+}
+
+.sales-chart {
+  background-color: #c1ffc1; /* Lighter shade of green */
+  border: 1px solid #228b22; /* Dark green border */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.sales-chart h3 {
+  margin-bottom: 10px;
+  color: #228b22; /* Dark green */
+}
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1 1 300px;
+  margin: 0 10px 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.recent-orders,
+.sales-chart {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    flex: 1 1 100%;
+  }
+}
