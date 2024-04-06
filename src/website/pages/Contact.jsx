@@ -1,44 +1,43 @@
-import axios from 'axios';
+import axios from "axios";
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+const AddContact = () => {
+  const [formvalue, setFormvalue] = useState({
+    id: "",
+    name: "",
+    email: "",
+    mobile: "",
+    comment: "",
+  });
 
-
-  const AddContact = () => {
-    const [formvalue, setFormvalue] = useState({
-      id:"",
-      name: "",
-      email: "",
-      comment: "",
+  const getform = (e) => {
+    setFormvalue({
+      ...formvalue,
+      id: new Date().getTime().toString(),
+      [e.target.name]: e.target.value,
     });
-  
-    const getform=(e)=>{
+    console.log(formvalue);
+  };
+
+  const submithandle = async (e) => {
+    e.preventDefault(); //stop page relaod
+    const res = await axios.post("http://localhost:3000/contacts", formvalue);
+    console.log(res);
+    if (res.status === 201) {
       setFormvalue({
         ...formvalue,
-        id: new Date().getTime().toString(),
-        [e.target.name]: e.target.value,
+        id: "",
+        name: "",
+        email: "",
+        mobile: "",
+        comment: "",
       });
-      console.log(formvalue);
+      alert("Details submitted success");
+      return false;
     }
-  
-    const submithandle = async (e) =>{
-      e.preventDefault(); //stop page relaod
-      const res = await axios.post('http://localhost:3000/contacts', formvalue) 
-      console.log(res);
-      if(res.status === 201){
-        setFormvalue({
-          ...formvalue, 
-          id:"",
-      name: "",
-      email: "",
-      comment: "",
-        });
-        alert("Details submitted success");
-        return false;
-      }
-    };
-
+  };
 
   return (
     <div>
@@ -70,7 +69,7 @@ import Footer from "../components/Footer";
           <div className="row g-0">
             <div className="col-lg-7">
               <div className="bg-primary h-100 p-5">
-                <form action='' method='post' onSubmit={submithandle}>
+                <form action="" method="post" onSubmit={submithandle}>
                   <div className="row g-3">
                     <div className="col-6">
                       <input
@@ -78,8 +77,9 @@ import Footer from "../components/Footer";
                         className="form-control bg-light border-0 px-4"
                         placeholder="Your Name"
                         name="name"
-            value={formvalue.name}
-            onChange={getform}
+                        required
+                        value={formvalue.name}
+                        onChange={getform}
                         style={{ height: 55 }}
                       />
                     </div>
@@ -89,20 +89,34 @@ import Footer from "../components/Footer";
                         className="form-control bg-light border-0 px-4"
                         placeholder="Your Email"
                         name="email"
-            value={formvalue.email}
-            onChange={getform}
+                        required
+                        value={formvalue.email}
+                        onChange={getform}
                         style={{ height: 55 }}
                       />
                     </div>
-                    
+                    <div className="col-12">
+                      <input
+                        type="number"
+                        className="form-control bg-light border-0 px-4"
+                        placeholder="Mobile No."
+                        name="mobile"
+                        required
+                        value={formvalue.mobile}
+                        onChange={getform}
+                        style={{ height: 55 }}
+                      />
+                    </div>
+
                     <div className="col-12">
                       <textarea
                         className="form-control bg-light border-0 px-4 py-3"
                         rows={4}
-                        placeholder="Comment"
+                        placeholder="Message"
                         name="comment"
-            value={formvalue.comment}
-            onChange={getform}
+                        required
+                        value={formvalue.comment}
+                        onChange={getform}
                         defaultValue={""}
                       />
                     </div>
@@ -168,6 +182,6 @@ import Footer from "../components/Footer";
       <Footer />
     </div>
   );
-}
+};
 
 export default AddContact;

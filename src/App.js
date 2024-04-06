@@ -17,8 +17,7 @@ import Header from "./website/components/Header";
 import Footer from "./website/components/Footer";
 import LogIn from "./website/pages/LogIn";
 import SignUp from "./website/pages/SignUp";
-
-
+import AFeedback from "./website/pages/AFeedback";
 
 import AdminLogin from "./admin/pages/AdminLogin";
 import Dashboard from "./admin/pages/Dashboard";
@@ -34,12 +33,14 @@ import ManageEmployee from "./admin/pages/ManageEmployee";
 import Contacts from "./admin/pages/Contacts";
 import ManageProducts from "./admin/pages/Manageproducts";
 import AddProducts from "./admin/pages/AddProducts";
-
+import AddBlog from "./admin/pages/AddBlog";
+import ManageBlog from "./admin/pages/ManageBlog";
 
 function App() {
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <BrowserRouter>
-    <ToastContainer></ToastContainer>
+      <ToastContainer></ToastContainer>
       <Routes>
         {/* website routing */}
         <Route path="/" element={<Home />}></Route>
@@ -52,33 +53,181 @@ function App() {
         <Route path="/features" element={<Features />}></Route>
         <Route path="/team" element={<Team />}></Route>
         <Route path="/testimonial" element={<Testimonial />}></Route>
-        <Route path="/signup" element={<><Header/><SignUp/><Footer/></>}></Route>
-        <Route path="/login" element={<><Header/><LogIn/><Footer/></>}></Route>
-        <Route path="/profile" element={<><Header/><Profile/><Footer/></>}></Route>
-        <Route path="/viewproducts/:cate_id" element={<><Header/><ViewProducts/><Footer/></>}></Route>
-
-
-
-
-
+        <Route path="/websitefeedback" element={<AFeedback />}></Route>
+        <Route
+          path="/signup"
+          element={
+            <>
+              <Header />
+              <SignUp />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/login"
+          element={
+            <>
+              <Header />
+              <LogIn />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Header />
+              <Profile />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/viewproducts/:cate_id"
+          element={
+            <>
+              <Header />
+              <ViewProducts />
+              <Footer />
+            </>
+          }
+        ></Route>
 
         {/* Admin routing */}
+
         <Route path="/adminlogin" element={<AdminLogin />}></Route>
-        <Route path="/dashboard" element={<><Aheader/><Dashboard /><Afooter/></>}></Route>
-        <Route path="/customer" element={<><Aheader/><Customer/><Afooter/></>}></Route>
-        <Route path="/manageemployee" element={<><Aheader/><ManageEmployee/><Afooter/></>}></Route>
-        <Route path="/AddEmployee" element={<><Aheader/><AddEmployee/><Afooter/></>}></Route>
-        <Route path="/ManageCategories" element={<><Aheader/><ManageCategories/><Afooter/></>}></Route>
-        <Route path="/addcategories" element={<><Aheader/><AddCategories/><Afooter/></>}></Route>
-        <Route path="/manageproducts" element={<><Aheader/><ManageProducts/><Afooter/></>}></Route>
-        <Route path="/addproducts" element={<><Aheader/><AddProducts/><Afooter/></>}></Route>
-        <Route path="/contacts" element={<><Aheader/><Contacts/><Afooter/></>}></Route>
-        <Route path="/booking" element={<><Aheader/><Booking/><Afooter/></>}></Route>
-        <Route path="/feedback" element={<><Aheader/><Feedback/><Afooter/></>}></Route>
-
-
-
-
+        <Route
+          path="/dashboard"
+          element={
+            <>
+              <Aheader />
+              <Dashboard />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/customer"
+          element={
+            <>
+              <Aheader />
+              <Customer />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/manageemployee"
+          element={
+            <>
+              <Aheader />
+              <ManageEmployee />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/AddEmployee"
+          element={
+            <>
+              <Aheader />
+              <AddEmployee />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/ManageCategories"
+          element={
+            <>
+              <Aheader />
+              <ManageCategories />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/addcategories"
+          element={
+            <>
+              <Aheader />
+              <AddCategories />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/manageproducts"
+          element={
+            <>
+              <Aheader />
+              <ManageProducts />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/addproducts"
+          element={
+            <>
+              <Aheader />
+              <AddProducts />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/contacts"
+          element={
+            <>
+              <Aheader />
+              <Contacts />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/booking"
+          element={
+            <>
+              <Aheader />
+              <Booking />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/feedback"
+          element={
+            <>
+              <Aheader />
+              <Feedback />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/addblog"
+          element={
+            <>
+              <Aheader />
+              <AddBlog />
+              <Afooter />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/manageblog"
+          element={
+            <>
+              <Aheader />
+              <ManageBlog />
+              <Afooter />
+            </>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -66,13 +66,9 @@ function Footer() {
                     </a>
                     <a className="text-white mb-2" href="/">
                       <i className="bi bi-arrow-right text-white me-2" />
-                      Meet The Team
-                    </a>
-                    <a className="text-white mb-2" href="/">
-                      <i className="bi bi-arrow-right text-white me-2" />
                       Latest Blog
                     </a>
-                    <a className="text-white" href="/">
+                    <a className="text-white mb-2" href="/">
                       <i className="bi bi-arrow-right text-white me-2" />
                       Contact Us
                     </a>

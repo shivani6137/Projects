@@ -416,7 +416,11 @@ function Home() {
           <div className="owl-carousel product-carousel px-5">
             <div className="pb-5">
               <div className="product-item position-relative bg-white d-flex flex-column text-center">
-                <img className="img-fluid mb-4" src="website/img/product-1.png" alt='pic' />
+                <img
+                  className="img-fluid mb-4"
+                  src="website/img/product-1.png"
+                  alt="pic"
+                />
                 <h6 className="mb-3">Organic Vegetable</h6>
                 <h5 className="text-primary mb-0">$19.00</h5>
                 <div className="btn-action d-flex justify-content-center">
@@ -431,7 +435,11 @@ function Home() {
             </div>
             <div className="pb-5">
               <div className="product-item position-relative bg-white d-flex flex-column text-center">
-                <img className="img-fluid mb-4" src="website/img/product-2.png" alt='pic' />
+                <img
+                  className="img-fluid mb-4"
+                  src="website/img/product-2.png"
+                  alt="pic"
+                />
                 <h6 className="mb-3">Organic Vegetable</h6>
                 <h5 className="text-primary mb-0">$19.00</h5>
                 <div className="btn-action d-flex justify-content-center">
@@ -446,7 +454,11 @@ function Home() {
             </div>
             <div className="pb-5">
               <div className="product-item position-relative bg-white d-flex flex-column text-center">
-                <img className="img-fluid mb-4" src="website/img/product-1.png" alt='pic' />
+                <img
+                  className="img-fluid mb-4"
+                  src="website/img/product-1.png"
+                  alt="pic"
+                />
                 <h6 className="mb-3">Organic Vegetable</h6>
                 <h5 className="text-primary mb-0">$19.00</h5>
                 <div className="btn-action d-flex justify-content-center">
@@ -461,7 +473,11 @@ function Home() {
             </div>
             <div className="pb-5">
               <div className="product-item position-relative bg-white d-flex flex-column text-center">
-                <img className="img-fluid mb-4" src="website/img/product-2.png" alt='pic' />
+                <img
+                  className="img-fluid mb-4"
+                  src="website/img/product-2.png"
+                  alt="pic"
+                />
                 <h6 className="mb-3">Organic Vegetable</h6>
                 <h5 className="text-primary mb-0">$19.00</h5>
                 <div className="btn-action d-flex justify-content-center">
@@ -476,7 +492,11 @@ function Home() {
             </div>
             <div className="pb-5">
               <div className="product-item position-relative bg-white d-flex flex-column text-center">
-                <img className="img-fluid mb-4" src="website/img/product-1.png" alt='pic' />
+                <img
+                  className="img-fluid mb-4"
+                  src="website/img/product-1.png"
+                  alt="pic"
+                />
                 <h6 className="mb-3">Organic Vegetable</h6>
                 <h5 className="text-primary mb-0">$19.00</h5>
                 <div className="btn-action d-flex justify-content-center">

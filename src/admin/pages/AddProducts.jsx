@@ -33,13 +33,6 @@ const FormInput = styled.input`
   border: 1px solid #ccc;
 `;
 
-// const FormTextarea = styled.textarea`
-//   width: 100%;
-//   padding: 8px;
-//   border-radius: 4px;
-//   border: 1px solid #ccc;
-// `;
-
 const FormFileInput = styled.input`
   width: 100%;
   padding: 8px;

@@ -1,6 +1,6 @@
-import axios from 'axios';
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import axios from "axios";
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const FormContainer = styled.div`
   max-width: 400px;
@@ -45,39 +45,39 @@ const FormButton = styled.button`
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #3BB77E;
+  background-color: #3bb77e;
   color: #fff;
   cursor: pointer;
 `;
 
 const AddCategories = () => {
   const [formvalue, setFormvalue] = useState({
-    id:"",
+    id: "",
     cate_name: "",
     cate_img: "",
-    status: "" // For handling image upload
+    status: "", // For handling image upload
   });
 
-  const getform=(e)=>{
+  const getform = (e) => {
     setFormvalue({
       ...formvalue,
       id: new Date().getTime().toString(),
       [e.target.name]: e.target.value,
     });
     console.log(formvalue);
-  }
+  };
 
-  const submithandle = async (e) =>{
+  const submithandle = async (e) => {
     e.preventDefault(); //stop page relaod
-    const res = await axios.post('http://localhost:3000/categories', formvalue) 
+    const res = await axios.post("http://localhost:3000/categories", formvalue);
     console.log(res);
-    if(res.status === 201){
+    if (res.status === 201) {
       setFormvalue({
-        ...formvalue, 
-        id:"",
+        ...formvalue,
+        id: "",
         cate_name: "",
         cate_img: "",
-        status: ""
+        status: "",
       });
       alert("Categories added successfully");
       return false;
@@ -87,7 +87,7 @@ const AddCategories = () => {
   return (
     <FormContainer>
       <FormTitle>Add Category</FormTitle>
-      <form action='' method='post' onSubmit={submithandle}>
+      <form action="" method="post" onSubmit={submithandle}>
         <FormGroup>
           <FormLabel>Category Name:</FormLabel>
           <FormInput
@@ -110,11 +110,7 @@ const AddCategories = () => {
         </FormGroup>
         <FormGroup>
           <FormLabel>Status:</FormLabel>
-          <FormSelect
-            name="status"
-            value={formvalue.status}
-            onChange={getform}
-          >
+          <FormSelect name="status" value={formvalue.status} onChange={getform}>
             <option value="">Select Status</option>
             <option value="In stock">In Stock</option>
             <option value="Out of stock">Out of Stock</option>

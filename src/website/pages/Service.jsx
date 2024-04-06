@@ -107,7 +107,7 @@ function Service() {
                   <img
                     className="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4"
                     src="website/img/testimonial-2.jpg"
-                    alt='pic'
+                    alt="pic"
                   />
                   <p className="fs-5">
                     Dolores sed duo clita justo dolor et stet lorem kasd dolore
@@ -121,7 +121,7 @@ function Service() {
                   <img
                     className="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4"
                     src="website/img/testimonial-2.jpg"
-                    alt='pic'
+                    alt="pic"
                   />
                   <p className="fs-5">
                     Dolores sed duo clita justo dolor et stet lorem kasd dolore

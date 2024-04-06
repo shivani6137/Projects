@@ -61,19 +61,12 @@ const DeleteButton = styled(ActionButton)`
   color: #fff;
 `;
 
-const StatusButton = styled(ActionButton)`
-  background-color: #ee9a4d;
-  color: #fff;
-  width: 150px;
-  height: 40px;
-`;
-
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
 `;
 
-function ManageProducts() {
+function ManageBlog() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -81,7 +74,7 @@ function ManageProducts() {
   }, []);
 
   const fetch = async () => {
-    const res = await axios.get("http://localhost:3000/services"); // Assuming your JSON server is running on localhost:3000
+    const res = await axios.get("http://localhost:3000/blogs"); // Assuming your JSON server is running on localhost:3000
     console.log(res.data);
     setData(res.data);
   };
@@ -89,13 +82,13 @@ function ManageProducts() {
   // Edit
   const [formvalue, setFormvalue] = useState({
     id: "",
-    name: "",
-    price: "",
-    img: "",
+    title: "",
+    date: "",
+    image: "",
   });
 
   const editdata = async (id) => {
-    const res = await axios.get(`http://localhost:3000/services/${id}`);
+    const res = await axios.get(`http://localhost:3000/blogs/${id}`);
     console.log(res.data);
     setFormvalue(res.data);
   };
@@ -106,18 +99,18 @@ function ManageProducts() {
   };
   const validation = () => {
     var result = true;
-    if (formvalue.name === "") {
-      toast.error("Name Field is required");
+    if (formvalue.title === "") {
+      toast.error("Title is required");
       result = false;
       return false;
     }
-    if (formvalue.price === "") {
-      toast.error("Price Field is required");
+    if (formvalue.date === "") {
+      toast.error("Date is required");
       result = false;
       return false;
     }
-    if (formvalue.img === "") {
-      toast.error("Image Field is required");
+    if (formvalue.image === "") {
+      toast.error("Image is required");
       result = false;
       return false;
     }
@@ -128,16 +121,16 @@ function ManageProducts() {
     e.preventDefault(); // stop page reload
     if (validation()) {
       const res = await axios.patch(
-        `http://localhost:3000/services/${formvalue.id}`,
+        `http://localhost:3000/blogs/${formvalue.id}`,
         formvalue
       );
       console.log(res);
       if (res.status === 200) {
         setFormvalue({
           ...formvalue,
-          name: "",
-          price: "",
-          img: "",
+          title: "",
+          date: "",
+          image: "",
         });
         toast.success("Update success");
         fetch();
@@ -147,29 +140,9 @@ function ManageProducts() {
 
   // for delete
   const handleDelete = async (id) => {
-    const res = await axios.delete(`http://localhost:3000/services/${id}`);
+    // eslint-disable-next-line no-unused-vars
+    const res = await axios.delete(`http://localhost:3000/blogs/${id}`);
     fetch();
-  };
-
-  const statusHandle = async (id) => {
-    const res = await axios.get(`http://localhost:3000/services/${id}`);
-    if (res.data.status === "Available") {
-      const res = await axios.patch(`http://localhost:3000/services/${id}`, {
-        status: "Unavailable",
-      });
-      if (res.status === 200) {
-        toast.success("Status changed to Unavailable  successfully");
-        fetch();
-      }
-    } else {
-      const res = await axios.patch(`http://localhost:3000/services/${id}`, {
-        status: "Available",
-      });
-      if (res.status === 200) {
-        toast.success("Status changed to Available successfully");
-        fetch();
-      }
-    }
   };
 
   return (
@@ -178,10 +151,8 @@ function ManageProducts() {
         <TableHead>
           <tr>
             <TableHeadCell>ID</TableHeadCell>
-            <TableHeadCell>Cate ID</TableHeadCell>
-            <TableHeadCell>Name</TableHeadCell>
-            {/* <TableHeadCell>Description</TableHeadCell> */}
-            <TableHeadCell>Price</TableHeadCell>
+            <TableHeadCell>Title</TableHeadCell>
+            <TableHeadCell>Date</TableHeadCell>
             <TableHeadCell>Image</TableHeadCell>
             <TableHeadCell>Action</TableHeadCell>
           </tr>
@@ -191,22 +162,17 @@ function ManageProducts() {
             return (
               <TableRow>
                 <TableCell>{value.id}</TableCell>
-                <TableCell>{value.cate_id}</TableCell>
-                <NameCell>{value.name}</NameCell>
-                {/* <TableCell>{value.desc}</TableCell> */}
-                <TableCell>{value.price}</TableCell>
+                <TableCell>{value.title}</TableCell>
+                <NameCell>{value.date}</NameCell>
                 <TableCell>
                   <img
-                    src={value.img}
+                    src={value.imgage}
                     alt="Service"
                     style={{ maxWidth: "50%", height: "auto" }}
                   />
                 </TableCell>
                 <TableCell>
                   <ButtonContainer>
-                    <StatusButton onClick={() => statusHandle(value.id)}>
-                      {value.status}
-                    </StatusButton>
                     <AddButton
                       onClick={() => editdata(value.id)}
                       data-bs-toggle="modal"
@@ -240,13 +206,13 @@ function ManageProducts() {
                                     <input
                                       type="text"
                                       className="form-control"
-                                      name="name"
-                                      value={formvalue.name}
+                                      name="title"
+                                      value={formvalue.title}
                                       onChange={getform}
                                       id="name"
-                                      placeholder="Category Name"
+                                      placeholder="Title"
                                     />
-                                    <label htmlFor="name">Name</label>
+                                    <label htmlFor="name">Title</label>
                                   </div>
                                 </div>
                                 <div className="col-md-6">
@@ -254,13 +220,13 @@ function ManageProducts() {
                                     <input
                                       type="text"
                                       className="form-control"
-                                      name="price"
-                                      value={formvalue.price}
+                                      name="date"
+                                      value={formvalue.date}
                                       onChange={getform}
                                       id="image"
-                                      placeholder="Price"
+                                      placeholder="Date"
                                     />
-                                    <label htmlFor="image">Price</label>
+                                    <label htmlFor="image">Date</label>
                                   </div>
                                 </div>
                                 <div className="col-md-6">
@@ -268,11 +234,11 @@ function ManageProducts() {
                                     <input
                                       type="text"
                                       className="form-control"
-                                      name="img"
-                                      value={formvalue.img}
+                                      name="image"
+                                      value={formvalue.image}
                                       onChange={getform}
                                       id="name"
-                                      placeholder="image"
+                                      placeholder="Image"
                                     />
                                     <label htmlFor="name">Image</label>
                                   </div>
@@ -315,4 +281,4 @@ function ManageProducts() {
   );
 }
 
-export default ManageProducts;
+export default ManageBlog;

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import styled from "styled-components";
 
 const TableContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const StyledTable = styled.table`
 `;
 
 const TableHead = styled.thead`
-  background-color: #3BB77E;
+  background-color: #3bb77e;
   color: #fff;
 `;
 
@@ -43,7 +43,7 @@ const ActionButton = styled.button`
 `;
 
 const AddButton = styled(ActionButton)`
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
 `;
 
@@ -61,12 +61,13 @@ function Booking() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/bookings') // Assuming your JSON server is running on localhost:3000
-      .then(response => {
+    axios
+      .get("http://localhost:3000/bookings") // Assuming your JSON server is running on localhost:3000
+      .then((response) => {
         setBookings(response.data);
       })
-      .catch(error => {
-        console.error('Error fetching booking data:', error);
+      .catch((error) => {
+        console.error("Error fetching booking data:", error);
       });
   }, []);
 
@@ -83,7 +84,7 @@ function Booking() {
           </tr>
         </TableHead>
         <TableBody>
-          {bookings.map(booking => (
+          {bookings.map((booking) => (
             <TableRow key={booking.id}>
               <TableCell>{booking.id}</TableCell>
               <TableCell>{booking.cust_id}</TableCell>

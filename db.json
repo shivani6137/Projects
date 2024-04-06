@@ -8,22 +8,6 @@
       "mobile": "1234567678",
       "status": "Unblock",
       "img": ""
-    },
-    {
-      "id": "1708499741717",
-      "name": "kiran",
-      "email": "kiran@gmail.com",
-      "password": "1234",
-      "mobile": "3456765678",
-      "status": "Unblock"
-    },
-    {
-      "id": "1709657543458",
-      "name": "Dimple",
-      "email": "dimple56@gmail.com",
-      "password": "1234",
-      "mobile": "3434567889",
-      "status": "Unblock"
     }
   ],
   "employees": [
@@ -51,7 +35,7 @@
       "email": "sidharth@gmail.com",
       "password": "1234",
       "mobile": "2343434343",
-      "img": "https://www.freepik.com/free-photo/close-up-assortment-organic-fruits_7325478.htm#fromView=search&page=1&position=0&uuid=6eecf6e0-1a9d-45bd-be6e-9e3ccf43d074",
+      "img": "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?t=st=1711805562~exp=1711809162~hmac=b124ea2a55f854966fadcda6d931da4710de5187205ac6934fcd28d71604fe0a&w=900",
       "status": "Active"
     }
   ],
@@ -89,20 +73,11 @@
   ],
   "services": [
     {
-      "id": "1709642318523",
-      "cate_id": "1709639765714",
-      "name": "Okra",
-      "desc": "Okra is rich in magnesium, folate, fiber, antioxidants, and vitamins C, K1 and A. It may help support healthy pregnancy, heart health, blood sugar. it may even have anticancer properties.",
-      "price": "50",
-      "img": "https://img.freepik.com/premium-photo/young-okra-isolated-white-background_147493-714.jpg?w=1060",
-      "status": "Available"
-    },
-    {
       "id": "1709653535523",
       "cate_id": "1709639765714",
       "name": "Potato",
       "desc": "Potatoes contain antioxidants and supply beneficial vitamins and minerals, including vitamin C, B6, and potassium. They may also benefit your digestive health.",
-      "price": "40",
+      "price": "70",
       "img": "https://img.freepik.com/free-photo/basket-white-potatoes_1268-25051.jpg?t=st=1709653534~exp=1709657134~hmac=e7e27f8e67f107c3c1190a355d8d80bb308b7dd1fa0ef91068ca6ce888f0e00e&w=900",
       "status": "Available"
     },
@@ -111,7 +86,7 @@
       "cate_id": "1709639765714",
       "name": "Bitter Gourd ",
       "desc": "As a rich source of antioxidants, flavonoids, and other polyphenol compounds, bitter gourd may help to reduce your risks for a number of health issues.",
-      "price": "45",
+      "price": "60",
       "img": "https://img.freepik.com/free-photo/glass-bitter-gourd-smoothie-with-shopped-bitter-gourd_1150-35377.jpg?t=st=1709653773~exp=1709657373~hmac=1d3ca1be4c57694362b9dd57b18c5c0c59a54d43de1a7634dd9bf58f9e4c6dd2&w=900",
       "status": "Available"
     },
@@ -129,7 +104,7 @@
       "cate_id": "1709639895448",
       "name": "Apple",
       "desc": "",
-      "price": "150",
+      "price": "200",
       "img": "https://img.freepik.com/free-photo/delicious-red-apples-studio_23-2150811013.jpg?t=st=1709654314~exp=1709657914~hmac=731c2805bde389a5cd97aa47ab32a07a27e63f7c78f8da1f8fd54159394707dc&w=900",
       "status": "Available"
     },
@@ -201,7 +176,7 @@
       "cate_id": "1709640754228",
       "name": "Dragon Fruit",
       "desc": "",
-      "price": "60",
+      "price": "180",
       "img": "https://img.freepik.com/free-photo/dragon-fruit-old-wood-background_1150-37978.jpg?t=st=1709656940~exp=1709660540~hmac=85923c04c70f16df5ba258630f922f5ee3690974381ef916ab2d8a0d540f9cc1&w=900",
       "status": "Available"
     },
@@ -222,14 +197,237 @@
       "price": "200",
       "img": "https://img.freepik.com/free-photo/lots-blueberries_144627-395.jpg?t=st=1709657396~exp=1709660996~hmac=06277b364149c2776ecce99e11711bc3276489b891da719fb120116171700d21&w=900",
       "status": "Available"
+    },
+    {
+      "id": "1711819863648",
+      "cate_id": "1709639765714",
+      "name": "Onion",
+      "desc": "",
+      "price": "80",
+      "img": "https://img.freepik.com/free-photo/red-onion_144627-15416.jpg?t=st=1711819847~exp=1711823447~hmac=bf9219e64657041a25b00f2f60b464b7d6956fea33035b9f5dbb15e56ae393b7&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711819960835",
+      "cate_id": "1709639765714",
+      "name": "Cauliflower",
+      "desc": "",
+      "price": "90",
+      "img": "https://img.freepik.com/free-photo/realistic-image-cauliflower-colourful-background_125540-3806.jpg?t=st=1711819955~exp=1711823555~hmac=92b4260aaf90163362b1d2dd12eae8166323799f041884a911314325e42de61e&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820162827",
+      "cate_id": "1709639765714",
+      "name": "Carrot",
+      "desc": "",
+      "price": "100",
+      "img": "https://img.freepik.com/free-photo/stack-carrots-bowl-marble_114579-65075.jpg?t=st=1711820157~exp=1711823757~hmac=e2378f7016797f9fdf14b5c7af55b7549022e2f8c660dcdbe46f881d95998933&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820240945",
+      "cate_id": "1709639765714",
+      "name": "Okra",
+      "desc": "",
+      "price": "80",
+      "img": "https://media.istockphoto.com/id/175266309/photo/close-up-of-pile-of-organic-okra-on-wood.jpg?s=1024x1024&w=is&k=20&c=r-ob4Ix4PSeVAvTgZWjP6sauyKln1VJmJbl1_65sPFQ=",
+      "status": "Available"
+    },
+    {
+      "id": "1711820336188",
+      "cate_id": "1709639895448",
+      "name": "Grapes",
+      "desc": "",
+      "price": "120",
+      "img": "https://img.freepik.com/free-photo/green-grapes_1203-7663.jpg?t=st=1711820326~exp=1711823926~hmac=98a15ea3986411afcf9d1b3d2ff05784abb8fd620f092e4ecc8546534f33ad02&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820447299",
+      "cate_id": "1709639895448",
+      "name": "Papaya",
+      "desc": "",
+      "price": "80",
+      "img": "https://img.freepik.com/free-photo/fresh-papaya-fruit_144627-34201.jpg?t=st=1711820441~exp=1711824041~hmac=a9c58a8ae8da9efed2ad38e6577e225d688b0da5bcd35ad387a84a2268d25b3d&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820569168",
+      "cate_id": "1709639895448",
+      "name": "Kiwi",
+      "desc": "",
+      "price": "200",
+      "img": "https://img.freepik.com/free-photo/fresh-kiwi-fruit-isolated_144627-30034.jpg?t=st=1711820551~exp=1711824151~hmac=4c732c97895b8e88f30fe2d291769ece091b01b56a784ceedbed915cac9e1ae6&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820611966",
+      "cate_id": "1709639895448",
+      "name": "Strawberry",
+      "desc": "",
+      "price": "180",
+      "img": "https://img.freepik.com/free-photo/closeup-shot-fresh-ripe-strawberries-isolated-white-surface_181624-54939.jpg?t=st=1711820605~exp=1711824205~hmac=d84b1f77c0cd69cab13728781cda6050828da8092b804f29a865e5c6ce931ca3&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820676726",
+      "cate_id": "1709639895448",
+      "name": "Mango",
+      "desc": "",
+      "price": "250",
+      "img": "https://img.freepik.com/free-vector/vector-ripe-yellow-orange-red-whole-sliced-mango-cubes-with-leaf-isolated-white-background_1284-45465.jpg?t=st=1711820669~exp=1711824269~hmac=7cff42855273e2ab2015c9fa541ddeb351b268aae25b537d8e30f9db11eba50e&w=740",
+      "status": "Available"
+    },
+    {
+      "id": "1711820708586",
+      "cate_id": "1709639895448",
+      "name": "Watermelon",
+      "desc": "",
+      "price": "100",
+      "img": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1711820699~exp=1711824299~hmac=ad696b08ff86dac7ccb470a67da886bae365f24105806270897c38fbca3aba76&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820738060",
+      "cate_id": "1709639895448",
+      "name": "Melon",
+      "desc": "",
+      "price": "120",
+      "img": "https://img.freepik.com/free-photo/japanese-melon-cantaloupe-cantaloupe-seasonal-fruit-health-concept_1150-23381.jpg?t=st=1711820721~exp=1711824321~hmac=e98e504ab1ce88fe285462b1641d621e797da9baa167078727da5b1ecadb860b&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820827907",
+      "cate_id": "1709640754228",
+      "name": "Avocado",
+      "desc": "",
+      "price": "300",
+      "img": "https://img.freepik.com/free-photo/avocado-products-made-from-avocados-food-nutrition-concept_1150-26280.jpg?t=st=1711820818~exp=1711824418~hmac=d5583bdd680213c1a737b9d8a74ee2419559b18a2db8b29970d04432bbe3e705&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711820899584",
+      "cate_id": "1709640754228",
+      "name": "Green Apple",
+      "desc": "",
+      "price": "200",
+      "img": "https://img.freepik.com/free-photo/apples-table_144627-6745.jpg?t=st=1711820889~exp=1711824489~hmac=2ca559ce0ac9ff9d5d5eed4f9c47bf8ecf26def0d7a2ccf75dab52b01b9df97b&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821054728",
+      "cate_id": "1709640754228",
+      "name": "Peaches",
+      "desc": "",
+      "price": "350",
+      "img": "https://img.freepik.com/free-photo/fresh-yellow-apricots-isolated-white_114579-10486.jpg?t=st=1711821048~exp=1711824648~hmac=d52743b09a8a5978c3ca277205725ccabedb758a70aad770a1b8742cd349d8f6&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821209155",
+      "cate_id": "1709640754228",
+      "name": "Guava",
+      "desc": "",
+      "price": "150",
+      "img": "https://img.freepik.com/free-psd/guava-fruits-isolated-transparent-background_191095-14720.jpg?t=st=1711821203~exp=1711824803~hmac=b837e0b95c6fd436d4e82caf5a466cbb4dddc394e4b3fb0628270e90d171ba15&w=740",
+      "status": "Available"
+    },
+    {
+      "id": "1711821269162",
+      "cate_id": "1709640635635",
+      "name": "Bell Pepper",
+      "desc": "",
+      "price": "250",
+      "img": "https://img.freepik.com/free-photo/colorful-bell-pepper_1203-6835.jpg?w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821329408",
+      "cate_id": "1709640635635",
+      "name": " Cherry tomatoes",
+      "desc": "",
+      "price": "200",
+      "img": "https://img.freepik.com/free-photo/red-cherry-tomatoes-out-rustic-basket-marble-table_114579-66512.jpg?t=st=1711821322~exp=1711824922~hmac=6c24a7048bfed496bd50735034c94e4ad30e7f0b1295684166d16735af934773&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821391161",
+      "cate_id": "1709640635635",
+      "name": "Zucchini",
+      "desc": "",
+      "price": "300",
+      "img": "https://img.freepik.com/free-photo/high-angle-arrangement-with-zucchinis_23-2148917717.jpg?t=st=1711821383~exp=1711824983~hmac=788836daf4620e8ffc02ea19ee276874fc192f48565ee1a7e75a1cada30c0fda&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821428442",
+      "cate_id": "1709640635635",
+      "name": "Red cabbage",
+      "desc": "",
+      "price": "250",
+      "img": "https://img.freepik.com/free-photo/high-angle-view-halved-fresh-purple-cabbage-knife-textile_23-2147926333.jpg?t=st=1711821420~exp=1711825020~hmac=084d6572d9c8408fc608eeb62497dbbf8a5e96478a7585b8fe33aafb0e44386c&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821509892",
+      "cate_id": "1709640236743",
+      "name": "Carrot Juice",
+      "desc": "",
+      "price": "99",
+      "img": "https://img.freepik.com/free-photo/front-close-view-fresh-carrot-juice-inside-long-glass-with-leaf-along-with-fresh-carrots-vegetable_140725-23064.jpg?t=st=1711821493~exp=1711825093~hmac=501fd8ee9c0851c13e270597b951caa55dc56ca71ea54e54ea397313772494c1&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821692852",
+      "cate_id": "1709640236743",
+      "name": "ABC Juice (Apple-Beetroot-Carrot)",
+      "desc": "",
+      "price": "149",
+      "img": "https://img.freepik.com/free-photo/fresh-carrot-juice_144627-35308.jpg?t=st=1711821684~exp=1711825284~hmac=14cb0c9d9111d32366c22f3a8e780891922aec29c2df2e97d0e7f48685d5429a&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821748985",
+      "cate_id": "1709640236743",
+      "name": "Mango Juice",
+      "desc": "",
+      "price": "120",
+      "img": "https://img.freepik.com/free-photo/side-view-sliced-mango-blackboard-with-glass-orange-juice-green_141793-9537.jpg?t=st=1711821743~exp=1711825343~hmac=7843927eca35ebfc9596b8cee4a54633b4d284773088b8f5e0d16bd94b0c1bb8&w=900",
+      "status": "Available"
+    },
+    {
+      "id": "1711821812796",
+      "cate_id": "1709640236743",
+      "name": "Papaya Juice",
+      "desc": "",
+      "price": "140",
+      "img": "https://img.freepik.com/free-photo/fresh-papaya-juice-glass-with-papaya-fruit-wooden-table-black-background-ai-generative_123827-24231.jpg?t=st=1711821794~exp=1711825394~hmac=5c37f36fcfe61c0e998201538306f8f7f14b2b050044af7c17f02ce5626c7832&w=900",
+      "status": "Available"
     }
   ],
   "contacts": [
     {
-      "id": "1708881198031",
-      "name": "Riya",
-      "email": "riya@gmail.com",
-      "comment": "Packaging was good."
+      "id": "1711807754773",
+      "name": "shivani kumawat",
+      "email": "shivanikumawat6137@gmail.com",
+      "mobile": "5657585955",
+      "comment": "nice service"
+    },
+    {
+      "id": "1711811345344",
+      "name": "reena",
+      "email": "reena236@gmail.com",
+      "mobile": "9876565677",
+      "comment": "provide more products",
+      "Mobile": "987656565"
+    },
+    {
+      "id": "1711817926519",
+      "name": "Dimple",
+      "email": "dimple56@gmail.com",
+      "mobile": "03434567889",
+      "comment": "can't find products"
     }
   ],
   "bookings": [
@@ -266,34 +464,57 @@
   ],
   "feedbacks": [
     {
+      "id": "1711815264778",
+      "name": "Reena",
+      "email": "reena236@gmail.com",
+      "feedback": "Quality is Good",
+      "rating": "4"
+    }
+  ],
+  "admin": [
+    {
       "id": "1",
-      "booking_id": 1,
-      "cust_id": 1,
-      "comment": "Great service! Highly recommended."
+      "name": "admin",
+      "username": "admin@1234",
+      "password": "123456"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "f0d0",
+      "title": "The Importance of Organic Farming",
+      "date": "2024-11-15",
+      "image": "https://img.freepik.com/free-vector/organic-farming-concept_23-2148443556.jpg?t=st=1711823909~exp=1711827509~hmac=9350b45ab99eeaec404f2109bedc26f399d16f180b2d70d61d996b212b1e1cca&w=740"
     },
     {
-      "id": "2",
-      "booking_id": 2,
-      "cust_id": 2,
-      "comment": "The experience was okay, but could be improved."
+      "id": "b2e2",
+      "title": "Spring Harvest ",
+      "date": "2024-04-15",
+      "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-farmers-illustration_23-2149331959.jpg?t=st=1711824418~exp=1711828018~hmac=1be9670315b56be6083a2971961ee356a808c3073ea8f0cc64a90a7d4db6314e&w=740"
     },
     {
-      "id": "3",
-      "booking_id": 3,
-      "cust_id": 3,
-      "comment": "Excellent service. Will definitely use again."
+      "id": "d2da",
+      "title": "Farm-to-Table Recipes",
+      "date": "2023-06-10",
+      "image": "https://img.freepik.com/free-photo/3d-rendering-chinese-reunion-dinner_23-2151089118.jpg?t=st=1711824977~exp=1711828577~hmac=d4907ffaa6f973504a88ba80d3b52d5504a669097e2767d60178ff3d0f3b6b18&w=740"
     },
     {
-      "id": "4",
-      "booking_id": 4,
-      "cust_id": 4,
-      "comment": "The service exceeded my expectations."
+      "id": "297a",
+      "title": "Winter Wonderland",
+      "date": "2023-12-02",
+      "image": "https://img.freepik.com/free-photo/view-delicious-food-reunion-dinner-anime-style_23-2151022539.jpg?t=st=1711825325~exp=1711828925~hmac=1befdaaa92e2a97c896e6a87b055535254c84145e977bff0792a606c361555df&w=740"
     },
     {
-      "id": "5",
-      "booking_id": 5,
-      "cust_id": 5,
-      "comment": "Had some issues with the booking process, but overall satisfied."
+      "id": "4ece",
+      "title": "Fall Harvest Fest",
+      "date": "2024-12-10",
+      "image": "https://img.freepik.com/free-photo/view-3d-people-cooking-kitchen_23-2150709816.jpg?t=st=1711825467~exp=1711829067~hmac=863f26cf2b6d85eea9a272a9804cf967ed0b7411a1f8b07066a7ce2e176e0ee3&w=740"
+    },
+    {
+      "id": "e645",
+      "title": "Bountiful Blossoms",
+      "date": "2024-07-20",
+      "image": "https://img.freepik.com/free-photo/view-people-enjoying-delicious-food-reunion-dinner-anime-style_23-2151022533.jpg?size=626&ext=jpg&ga=GA1.1.92893072.1701743359&semt=ais"
     }
   ]
 }

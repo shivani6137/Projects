@@ -1,18 +1,17 @@
-import React from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify';
+import React from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Navbar() {
-
   const redirect = useNavigate();
 
-    // Delete session
-    const logout = () => {
-        localStorage.removeItem('userid');
-        localStorage.removeItem('uname');
-        toast.success('Logout Success');
-        redirect('/')
-    }
+  // Delete session
+  const logout = () => {
+    localStorage.removeItem("userid");
+    localStorage.removeItem("uname");
+    toast.success("Logout Success");
+    redirect("/");
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
       <a href="index.html" className="navbar-brand d-flex d-lg-none">
@@ -71,44 +70,42 @@ function Navbar() {
           <NavLink to="/contact" className="nav-item nav-link">
             Contact
           </NavLink>
-          {(
-                        () => {
-                            //  Use  session
-                            if (localStorage.getItem('userid')) {
-                                return (
-                                        <NavLink to="/profile" className="nav-item nav-link">Hi .. {localStorage.getItem('uname')}</NavLink>
-                                )
-                            }
-                        }
-                    )()}
-
-
-
-                </div>
-                <div className="navbar-nav mx-0 py-0">
-                {(
-                    () => {
-                        if (localStorage.getItem('userid')) {
-                            return (
-                                <>
-                                    <a href="javascript:void(0)" onClick={logout} className="nav-item nav-link">Logout</a>
-                                </>
-                            )
-                        }
-                        else {
-                            return (
-                                <>
-                                    <Link to="/login" className="nav-item nav-link">Login</Link>
-                                </>
-                            )
-                        }
-                    }
-                )()}
-                </div>
-               
-
-         
+          <NavLink to="/websitefeedback" className="nav-item nav-link">
+            Feedback
+          </NavLink>
+          {(() => {
+            //  Use  session
+            if (localStorage.getItem("userid")) {
+              return (
+                <NavLink to="/profile" className="nav-item nav-link">
+                  Hi {localStorage.getItem("uname")}
+                </NavLink>
+              );
+            }
+          })()}
         </div>
+        <div className="navbar-nav mx-0 py-0">
+          {(() => {
+            if (localStorage.getItem("userid")) {
+              return (
+                <>
+                  <button onClick={logout} className="nav-item nav-link">
+                    Logout
+                  </button>
+                </>
+              );
+            } else {
+              return (
+                <>
+                  <Link to="/login" className="nav-item nav-link">
+                    Login
+                  </Link>
+                </>
+              );
+            }
+          })()}
+        </div>
+      </div>
     </nav>
   );
 }

@@ -2,11 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 
 function Header() {
-  
   return (
-    
     <>
-       
       <div className="container-fluid px-5 d-none d-lg-block">
         <div className="row gx-5 py-3 align-items-center">
           <div className="col-lg-3">
@@ -51,9 +48,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <Navbar/>
-
-
+      <Navbar />
     </>
   );
 }
